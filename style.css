@@ -1,0 +1,30 @@
+body{
+    margin:0;
+}
+
+#particles-js{
+    background: #003366;
+}
+
+.form{
+    background-color:#000;
+    opacity:0.6;
+    padding:30px;
+    position: absolute;
+    top:40%;
+    left:30px;
+    border:#000 solid 2px;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span{
+    font-size:22px;
+    color:#fff;
+    display: block;
+
+}
+
+.subtitle{
+    font-size:14px;
+}
