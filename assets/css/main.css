@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+
+html, body {
+    margin:0;
+    /*background: #69327F;*/
+    height: 100%;
+    width:100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.9)
+}
+
+
+.container {
+    width: 40%;
+    height:400px;
+    margin: auto;
+    position:fixed;
+    top:0; bottom:0; left:0; right:0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px #404040;
+    text-align: center;
+}
+
+h1 {
+    font-size:18px;
+    color:#000;
+    display: block;
+    font-weight: normal;
+    margin-bottom:0;
+    margin-top: 10px;
+}
+
+.subtitle {
+    font-size:14px;
+}
+
+.profile-pic{
+    margin: 0 auto;
+    width:150px;
+    border-radius: 50%;
+    margin-top:20px;
+    box-shadow: 0px 0px 6px #000;
+
+}
+
+/*contact section*/
+.contact {
+    border-bottom: #ccc 0.1px solid;
+    padding-bottom: 20px;
+    width:90%;
+    margin: 0 auto;
+    margin-top:20px;
+} 
+.contact a {
+    color: #404040;
+    font-size: 1.5em;
+    transition: color 0.3s linear;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+a:hover {
+    color:#7F7F7F;
+    transition: color 0.3s linear;
+}
+
+
+/*blog section of main pa*/
+.blog {
+    margin-top:40px;
+}
+
+.blog a{
+    font-size: 1.2em;
+}
+
+.blog-btn {
+    color: #000;
+    padding: 0.5em 1em;
+    border: #000 0.5px solid;
+    border-radius: 30px;
+    margin: 0 10px 0 10px;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+.blog-btn:hover {
+    background-color: #404040;
+    color: #fff;
+    border-color: #404040;
+    transition: all 0.3s linear;
+    text-decoration: none;
+}
+
+
+/*Post Page*/
+.post-container {
+    width: 100%;
+    padding: 0 25%;
+}
