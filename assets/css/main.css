@@ -107,8 +107,9 @@ a:hover {
 }
 
 
-/*Post Page*/
-.post-container {
-    width: 100%;
-    padding: 0 25%;
+/*RESPONSIVE MEDIA QUERYS*/
+@media (max-width:850px){
+    .container {
+        width: 90%;
+    }
 }
