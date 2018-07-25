@@ -79,7 +79,7 @@ a:hover {
 }
 
 
-/*blog section of main pa*/
+/*blog section of box*/
 .blog {
     margin-top:40px;
 }
@@ -106,10 +106,66 @@ a:hover {
     text-decoration: none;
 }
 
+/*MODAL*/
+.modal{
+    display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.modal-content{
+    width: 60%;
+    height:450px;
+    margin: auto;
+    position:fixed;
+    top:0; bottom:0; left:0; right:0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px #404040;
+    text-align: left;
+    padding: 30px;
+    line-height: 1.4em;
+}
+
+.close-btn{
+    float: right;
+    color: #7F7F7F;
+    font-size: 3em;
+    margin-top: 10px;
+}
+.close-btn:hover{
+    cursor: pointer;
+    color: #000;
+
+}
+
+.modal-header h2{
+    color: #404040;
+    font-weight: 400;
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+
+.modal-footer {
+   display: block;
+   width: 200px;
+   margin: 60px auto auto auto;
+}
+
 
 /*RESPONSIVE MEDIA QUERYS*/
 @media (max-width:850px){
     .container {
-        width: 90%;
+        width: 80%;
+    }
+    .modal-content{
+        width: 75%;
     }
 }

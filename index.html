@@ -28,12 +28,53 @@
                 <a href="mailto:felipegdas07@gmail.com" target="_blank"><i class="fas fa-envelope-open"></i></a>
             </section>
             <section class="blog">
-                <a class="blog-btn" href="about.html" id="btn-blog">about me</a>
-                <a class="blog-btn" href="posts.html">posts</a>
+                <a class="blog-btn" href="#" id="btn-aboutme">about me</a>
+                <a class="blog-btn" href="#" id="btn-posts">posts</a>
             </section>
         </div>
     </div>
 
+    <div id="aboutme" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-header">
+                <h2>about me</h2>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellendus velit, omnis minima doloremque ipsum quo tenetur, in, nihil excepturi repellat dignissimos deleniti vel nobis consequuntur eveniet facilis quidem fuga.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://github.com/felipegs07/resume" class="blog-btn">meu currículo</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="posts" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <div class="modal-header">
+                <h2>latest posts</h2>
+            </div>
+            <div class="modal-item">
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        function loadPosts(){
+            axios.get('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@velanidiz')
+            .then((response) => {
+                console.log(response);
+        
+            })
+            .catch((err) => {
+                console.log(err);
+            });
+        }
+    </script>
     <script src="/assets/js/main.js"></script>
 
 </body>
