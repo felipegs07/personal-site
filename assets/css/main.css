@@ -44,6 +44,10 @@ h1 {
     margin-top: 10px;
 }
 
+li {
+    text-transform: none;
+}
+
 .subtitle {
     font-size:14px;
 }
@@ -132,6 +136,7 @@ a:hover {
     text-align: left;
     padding: 30px;
     line-height: 1.4em;
+    overflow: scroll;
 }
 
 .close-btn{
@@ -154,10 +159,15 @@ a:hover {
 }
 
 .modal-footer {
-   display: block;
-   width: 200px;
+   width: 160px;
    margin: 60px auto auto auto;
 }
+
+/*blog posts modal*/
+.modal-items {
+    display: inline-block;
+}
+
 
 
 /*RESPONSIVE MEDIA QUERYS*/
@@ -165,7 +175,13 @@ a:hover {
     .container {
         width: 80%;
     }
-    .modal-content{
+    .modal-content {
         width: 75%;
+        font-size: 0.8em;
+    }
+    .modal-footer {
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-left: 70px;
     }
 }
