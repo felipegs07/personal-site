@@ -1,3 +1,4 @@
+console.log('hello my friend :)');
 //Get of DOM objects
 var aboutMeModal = document.querySelector('#aboutme');
 var aboutMeBtn = document.querySelector('#btn-aboutme');
@@ -34,5 +35,3 @@ window.addEventListener('click', function(e){
 
 //blog interaction
 postsBtn.addEventListener('click', function(){showModal(postsModal)}, false);
-
-loadPosts();

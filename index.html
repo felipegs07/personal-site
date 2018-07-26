@@ -29,7 +29,7 @@
             </section>
             <section class="blog">
                 <a class="blog-btn" href="#" id="btn-aboutme">sobre mim</a>
-                <a class="blog-btn" href="#" id="btn-posts">posts</a>
+                <a class="blog-btn" href="#" id="btn-posts">blog</a>
             </section>
         </div>
     </div>
@@ -57,11 +57,10 @@
                         Test-Driven Development (Mocha, Chai, Istanbul).
                     <br><br>
                     Para mais informações entre em contato ou acesse meu currículo:
-
                 </p>
             </div>
             <div class="modal-footer">
-                <a href="https://github.com/felipegs07/resume" class="blog-btn" target="_blank">meu currículo</a>
+                <a href="hhttps://github.com/felipegs07/felipegs07.github.io/blob/master/README.md" class="blog-btn" target="_blank">meu currículo</a>
             </div>
         </div>
     </div>
@@ -72,43 +71,55 @@
             <div class="modal-header">
                 <h2>últimos posts</h2>
             </div>
-            <section class="modal-items"></section>
+            <div class="modal-items"></div>
+            <div class="modal-footer">
+                <a href="https://medium.com/@felipegs07" class="blog-btn" target="_blank">todos os posts</a>
+            </div>
         </div>
     </div>
-    
+
+    <!-- script in html for make ajax requests works in gh pages -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
         function loadPosts(){
             axios.get('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@velanidiz')
-            .then((response) => {
-                console.log(response.data.items);
-                var modalPostsItems = document.querySelector('#posts section.modal-items');
-                var output;
+            .then(function(response) {
+                var modalPostsItems = document.querySelector('#posts div.modal-items');
+                var loopFinal;
+                if(response.data.items.length < 5){
+                    loopFinal = response.data.items.length;
+                }
+                else{
+                    loopFinal = 5; 
+                }
                 
-                for(var i = 0; i < response.data.items.length; i++){
-                    var post = document.createElement('article');
+                for(var i = 0; i < loopFinal; i++){
+                    var output;
                     var postContent = response.data.items[i];
-                    post.classList.add('modal-item');
                     var postDate = postContent.pubDate.split(' ');
                     output = `
                         <a  class="post-link" href="${postContent.link}" target="_blank">
-                            <h3 class="post-title">${postContent.title}</h3>
-                            <span class="post-date">${postDate[0]}</span>
+                            <h3 class="post-title">${postContent.title}<span class="post-category"> #${postContent.categories[0]}</span></h3>
                         </a>
                     `;
-                    console.log(output);
-                    post.innerHTML = output;
-                    modalPostsItems.appendChild(post);
+                    
+                    addPostInDom(output, modalPostsItems);
                 }
-                console.log(modalPostsItems);
             
             })
-            .catch((err) => {
+            .catch(function(err) {
                 console.log(err);
             });
         }
+
+        function addPostInDom(output, modal){
+            var post = document.createElement('article');
+            post.classList.add('modal-item');
+            post.innerHTML = output;
+            modal.appendChild(post);
+        }
+        loadPosts();
     </script>
     <script src="/assets/js/main.js"></script>
-
 </body>
 </html>
