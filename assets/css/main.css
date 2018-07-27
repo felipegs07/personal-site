@@ -163,6 +163,7 @@ a:hover {
 .modal-footer {
    width: 170px;
    margin: 30px auto auto auto;
+   font-size: initial;
 }
 
 /*blog posts modal*/
@@ -188,6 +189,20 @@ a:hover {
 
 
 /*RESPONSIVE MEDIA QUERYS*/
+@media (max-width:1050px){
+    .container {
+        width: 80%;
+    }
+    .modal-content {
+        width: 75%;
+        font-size: 1em;
+    }
+    .modal-footer {
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
+
 @media (max-width:850px){
     .container {
         width: 80%;
@@ -199,112 +214,6 @@ a:hover {
     .modal-footer {
         margin: 0 auto;
         margin-top: 20px;
-    }
-
-    .modal-items a{
-        font-size: 0.9em;
-    }
-}
-
-@media (max-width: 700px){
-    .modal-footer {
-        margin: 0 auto;
-        margin-top: 20px;
-        margin-left: 70px;
-    }
-}
-
-@media (max-width: 737px){
-    .modal-footer {
-        margin: 0 auto;
-        margin-top: 40px;
-        margin-left: 90px;
-    }
-    .modal-items a{
-        font-size: 0.8em;
-    }
-}
-
-@media (max-width: 668px){
-    .modal-footer {
-        margin: 0 auto;
-        margin-top: 20px;
-        margin-left: 75px;
-    }
-    .modal-items a{
-        font-size: 0.9em;
-    }
-}
-
-@media (max-width: 600px){
-    .modal-footer {
-        margin-top: 40px;
-        margin-left: 150px;
-    }
-    .modal-items a{
-        font-size: 0.9em;
-    }
-}
-
-@media (max-width: 320px){
-    .blog a {
-        font-size: 1em;
-    }
-    .modal-content {
-        width: 65%;
-    }
-    .modal-footer {
-        margin-left: 40px;
-        margin-top: 20px;
-    }
-    .modal-body p {
-        font-size: 0.8em;
-    }
-}
-
-@media (max-width: 360px){
-    .modal-footer {
-        margin-left: 70px;
-        margin-top: 20px;
-    }
-    .modal-body p {
-        font-size: 0.9em;
-    }
-}
-
-@media (max-width: 768px){
-    .modal-footer {
-        margin-top: 50px;
-    }
-}
-
-@media (width: 412px){
-    .modal-footer {
-        margin-left: 85px;
-    }
-}
-
-@media (width: 320px){
-    .modal-body p {
-        font-size: 0.8em;
-    }
-    .modal-footer {
-        margin-left: 40px;
-        margin-top: 30px;
-    }
-}
-
-@media (width: 375px){
-    .modal-footer {
-        margin-left: 75px;
-        margin-top: 30px;
-    }
-}
-
-@media (max-width: 414px){
-    .modal-footer {
-        margin-left: 85px;
-        margin-top: 30px;
     }
 }
 
