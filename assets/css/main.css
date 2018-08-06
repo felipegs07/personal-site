@@ -189,7 +189,7 @@ a:hover {
 
 
 /*RESPONSIVE MEDIA QUERYS*/
-@media (max-width:1050px){
+@media screen and (max-width:1050px){
     .container {
         width: 80%;
     }
@@ -203,7 +203,7 @@ a:hover {
     }
 }
 
-@media (max-width:850px){
+@media screen and (max-width:850px){
     .container {
         width: 80%;
     }
@@ -214,6 +214,17 @@ a:hover {
     .modal-footer {
         margin: 0 auto;
         margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:320px){
+    .blog .blog-btn{
+        font-size: 1em;
+    }
+
+    .modal-content{
+        max-height: 400px;
+        font-size: 0.7em;
     }
 }
 
