@@ -1,0 +1,38 @@
+# Global variables
+title: Felipe G. Silva | Front-end Developer
+email: your-email@example.com
+name: Felipe Gustavo da Silva
+job_title: Desenvolvedor Front-end
+description: >-
+  Eu sou um desenvolvedor front-end júnior com foco em me desenvolver na criação de web apps e UI. 
+  Como programador estou em busca constante de melhores práticas e conhecimento. 
+  Gosto de aprender coisas novas, me interesso por javascript e seus frameworks, design de interface/UX e ]
+  Test-Driven Development. 
+skills: >-
+  HTML; Responsive Design (Mobile First); CSS 3 (Sass); Css Frameworks (Bootstrap); Javascript (Testes); 
+  Automatizadores (Gulp, Webpack, Npm); Git; Test-Driven Development (Mocha, Chai, Istanbul). 
+skills_title: Habilidades
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+linkedin_username: https://www.linkedin.com/in/felipegdasilva/
+github_username:  https://github.com/felipegs07
+medium_username: https://medium.com/@felipegs07
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+sass:
+    style: compressed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

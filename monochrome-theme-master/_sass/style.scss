@@ -1,0 +1,442 @@
+$mono-color: #000000;
+$secondary-color: #fff;
+$time: 400ms;
+$hover-side-width: 65%;
+$hover-other-width: 35%;
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    line-height: 1;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+//PARTICLES JS
+canvas {
+    display: block;
+    vertical-align: bottom;
+  }
+
+#particles-js {
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+
+//HOME PAGE
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .btn {
+        padding: 0.8rem 2rem;
+        border: 2px solid $mono-color;
+        font-size: 1rem;
+        color: rgba($mono-color, 0.9);
+        background: transparent;
+        text-decoration: none;
+
+        &:hover{
+            background: rgba($mono-color, 0.9);
+            color: $secondary-color;
+            transition: $time all ease-in-out;
+            cursor: pointer;
+        }
+
+    }
+
+    .btn-portfolio-position {
+        position: absolute;
+        left: 10%;
+        top: 80%;
+    }
+
+    .split {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .left {
+        left: 0;
+        
+        &:before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: rgba($mono-color, 0.1);
+        }
+
+        
+
+    }
+    .right {
+        right: 0;
+
+        &:before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: $mono-color;
+        }
+
+        .right-border {
+            display: block;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0%;
+            right: 10%;
+            line-height: 0.1rem;
+            padding-right: 10px;
+            border-right: 3px solid $secondary-color;
+        }
+
+        .information-box {
+            display: block;
+            position: absolute;
+            height: 100%;
+            top: 4%;
+            right: 0;
+            color: $secondary-color;
+            line-height: 0.1rem;
+            text-align: right;
+            padding-right: 10px;
+            font-weight: 400;
+
+            .info-name {
+                font-size: 1.6rem;
+                color: $secondary-color;
+            }
+            .info-title {
+                font-size: 1.1rem;
+                color: $secondary-color;
+            }
+
+            .info-text {
+                font-size: 1rem;
+                margin-top: 20%;
+                line-height: 1.1rem;
+                position: absolute;
+                width:100%;
+                right: 5%;
+                text-align: right;
+            }
+
+            .info-skills {
+                font-size: 1.3rem;
+            }
+
+            .contact {
+                margin-top: 150%;
+                position: absolute;
+                right: 5%;
+
+                a {
+                    color: #DCDCDC;
+                    font-size: 1.2em;
+                    transition: color 0.3s linear;
+                    margin-right: 10px;
+                    margin-left: 10px;
+
+                    &:hover {
+                        color:#404040;
+                        transition: color 0.3s linear;
+                    }
+                }
+            }
+
+            .btn-blog {
+                padding: 0.8rem 2rem;
+                border: 2px solid $secondary-color;
+                font-size: 1rem;
+                color: $secondary-color;
+                background: transparent;
+                text-decoration: none;
+                margin-top:170%;
+        
+                &:hover{
+                    background: $secondary-color;
+                    color: $mono-color;
+                    transition: $time all ease-in-out;
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+    }
+
+    .portfolio {
+        height: 90%;
+        width: 95%;
+        position: absolute;
+        top: 5%;
+        background: rgba(#404040, 0.1);
+        overflow-x: hidden;
+        overflow-y: scroll;
+
+        .project {
+            width: 90%;
+            margin: 0.5rem auto;
+            background: rgba($color: $secondary-color, $alpha: 0.7);
+            padding: 2rem 1.5rem;
+            overflow: hidden;
+            border: 3px solid $secondary-color;
+
+            .project-name {
+                font-size: 1.7rem;
+                margin-bottom: 0.4rem;
+                color: $mono-color;
+            }
+
+            &:hover {
+                border: 3px solid $mono-color;
+                transition: $time all ease-in-out;
+            }
+        }
+    }
+
+    .portfolio-left {
+        left: -95%;
+    }
+    .portfolio-left-fadein {
+        left: 0;
+        transition: $time all ease-in-out;
+    }
+
+}
+
+//scrollbar style
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    
+    &:hover {
+        background: #555;
+    }
+}
+
+//portfolio
+.portfolio-header {
+    width: 100%;
+    height: 20vh;
+    line-height: 20vh;
+    position: fixed;
+    top: 0;
+
+    .portfolio-title h2 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+}
+
+.container-portfolio {
+    width: 60%;
+    padding: 0 20%;
+    text-align: justify;
+    margin-top: 25vh;
+
+}
+
+.container-buttons-links {
+    max-width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-project {
+    color: $mono-color;
+    font-size: 1.1rem;
+    padding: 0.3rem 1.5rem;
+    border: $mono-color 1px solid;
+    margin: auto;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    width: 70px;
+    height: 17px;
+    margin-bottom: 30px;
+
+    &:hover{
+        background: $mono-color;
+        color: $secondary-color;
+        transition: $time all ease-in-out;
+        cursor: pointer;
+    }
+}
+
+//blog modal
+.modal{
+    display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    .modal-content{
+        width: 60%;
+        height:450px;
+        margin: auto;
+        position:fixed;
+        top:0; bottom:0; left:0; right:0;
+        background-color: #fff;
+        box-shadow: 0px 0px 6px #404040;
+        text-align: left;
+        padding: 30px;
+        line-height: 1.4em;
+        overflow: hidden;
+        animation-name: modalopen;
+        animation-duration: 1s;
+
+        .close-btn{
+            float: right;
+            color: #7F7F7F;
+            font-size: 3em;
+            margin-top: 10px;
+        }
+        .close-btn:hover{
+            cursor: pointer;
+            color: #000;
+        
+        }
+
+        .modal-header h2{
+            color: #404040;
+            font-weight: 400;
+            padding-bottom: 20px;
+            border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+        }
+        
+        .modal-footer {
+           width: 170px;
+           margin: 30px auto auto auto;
+           font-size: initial;
+
+           .btn-allposts {
+                color: $mono-color;
+                padding: 0.5em 1em;
+                border: $mono-color 2px solid;
+                margin: 0 10px 0 10px;
+                text-decoration: none;
+                transition: all 0.3s linear;
+
+                &:hover {
+                    background-color: rgba($mono-color, 0.9);
+                    color: $secondary-color;
+                    border-color: $mono-color;
+                    transition: all 0.3s linear;
+                    text-decoration: none;
+                }
+            }
+        
+        }
+
+        .modal-items h3{
+            display: inline-block;
+            font-weight: 400;
+        
+        }
+        .modal-items a{
+            display: inline-block;
+            text-decoration: none;
+            color: $mono-color;
+        }
+        .modal-items a:hover{
+            color: #000;
+        }
+        
+        .modal-items span{
+            color: #7f7f7f
+        }
+
+    }
+    
+}
+ 
+//scroll effect on post page
+.header-scrolled {
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    margin-bottom: 10vh;
+    box-shadow: 0px 3px 3px rgba($mono-color, 0.3);
+
+    .portfolio-title h2{
+        font-size: 1.5rem;
+    }
+}
+
+@import "animations";
+
+
+
+//responsiveness
+@media screen and (max-width: 666px){
+    .container {
+        height: 200%;
+
+        .right {
+            top: 0;
+
+            .information-box {
+                top: 10%;
+            }
+        }
+
+        .left {
+            bottom: 0;
+        }
+    }
+    .container .split {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+
+@media screen and (max-width: 750px){
+    .container-portfolio {
+        width: 90%;
+        padding: 0 5%;
+
+    }
+
+    .portfolio-header {
+
+        .portfolio-title h2 {
+            font-size: 1.8rem;
+        }
+    }
+}

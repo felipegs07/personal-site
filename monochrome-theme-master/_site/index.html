@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Felipe G. Silva | Front-end Developer</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <section class="container">
+    <article class="split left">
+        <div id="particles-js">
+            <button id="btn-portfolio" class="btn btn-portfolio-position">ver portfólio</button>
+            <section id="portfolio" class="portfolio portfolio-left">
+                
+                    <article class="project">
+                        <a href="/jekyll/2018/08/20/welcome-to-jekyll.html" target="_blank" class="project-name">Projeto site em bootstrap</a>
+                        <article class="project-desc">Teste de descrição a ser usada</article>
+                    </article>
+                
+            </section>
+        </div>
+    </article>
+    <section class="split right">
+        <section class="right-border">
+            <article class="information-box">
+                <h1 class="info-name">Felipe Gustavo da Silva</h1>
+                <h2 class="info-title">Desenvolvedor Front-end</h2>
+                <p class="info-text">
+                    Eu sou um desenvolvedor front-end júnior com foco em me desenvolver na criação de web apps e UI.  Como programador estou em busca constante de melhores práticas e conhecimento.  Gosto de aprender coisas novas, me interesso por javascript e seus frameworks, design de interface/UX e ] Test-Driven Development. 
+                    <br><br>
+                        <span class="info-skills">
+                            Habilidades:
+                        </span>
+                        <br>
+                    HTML; Responsive Design (Mobile First); CSS 3 (Sass); Css Frameworks (Bootstrap); Javascript (Testes);  Automatizadores (Gulp, Webpack, Npm); Git; Test-Driven Development (Mocha, Chai, Istanbul). 
+                </p>
+                <article class="contact">
+                    <a href="https://github.com/felipegs07" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/felipegdasilva/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://medium.com/@felipegs07" target="_blank"><i class="fab fa-medium-m"></i></a>
+                    <a href="mailto:your-email@example.com" target="_blank"><i class="fas fa-envelope-open"></i></a>
+                </article>
+                <article class="blog">
+                    <button id="btn-blog" class="btn-blog">ver blog</button>
+                </article>
+            </article>
+        </section>
+    </section>
+</section>
+
+
+<section id="posts" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <div class="modal-header">
+            <h2>últimos posts</h2>
+        </div>
+        <div class="modal-items"></div>
+        <div class="modal-footer">
+            <a href="https://medium.com/@felipegs07" class="btn-allposts" target="_blank">todos os posts</a>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+<script>
+    particlesJS.load('particles-js', 'particlesjs.json', function() {
+        //console.log('particles.js config loaded');
+    });
+</script>
+<!-- script in html for make ajax requests works in gh pages -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    function loadPosts(){
+        axios.get('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@felipegs07')
+        .then(function(response) {
+            var modalPostsItems = document.querySelector('#posts div.modal-items');
+            var loopFinal;
+            if(response.data.items.length < 5){
+                loopFinal = response.data.items.length;
+            }
+            else{
+                loopFinal = 5; 
+            }
+            
+            for(var i = 0; i < loopFinal; i++){
+                var output;
+                var postContent = response.data.items[i];
+                var postDate = postContent.pubDate.split(' ');
+                output = `
+                    <a  class="post-link" href="${postContent.link}" target="_blank">
+                        <h3 class="post-title">${postContent.title}<span class="post-category"> #${postContent.categories[0]}</span></h3>
+                    </a>
+                `;
+                
+                addPostInDom(output, modalPostsItems);
+            }
+        
+        })
+        .catch(function(err) {
+            console.log(err);
+        });
+    }
+    
+    function addPostInDom(output, modal){
+        var post = document.createElement('article');
+        post.classList.add('modal-item');
+        post.innerHTML = output;
+        modal.appendChild(post);
+    }
+
+    loadPosts();
+</script>
+</body>
+</html>

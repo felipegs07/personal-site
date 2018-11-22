@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<section class="container">
+    <article class="split left">
+        <div id="particles-js">
+            <button id="btn-portfolio" class="btn btn-portfolio-position">ver portfólio</button>
+            <section id="portfolio" class="portfolio portfolio-left">
+                {% for post in site.posts %}
+                    <article class="project">
+                        <a href="{{ post.url | prepend: base.url }}" target="_blank" class="project-name">{{ post.title }}</a>
+                        <article class="project-desc">{{ post.desc }}</article>
+                    </article>
+                {% endfor %}
+            </section>
+        </div>
+    </article>
+    <section class="split right">
+        <section class="right-border">
+            <article class="information-box">
+                <h1 class="info-name">{{ site.name }}</h1>
+                <h2 class="info-title">{{ site.job_title }}</h2>
+                <p class="info-text">
+                    {{ site.description }}
+                    <br><br>
+                        <span class="info-skills">
+                            {{ site.skills_title }}:
+                        </span>
+                        <br>
+                    {{ site.skills }}
+                </p>
+                <article class="contact">
+                    <a href="{{ site.github_username }}" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="{{ site.linkedin_username }}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="{{ site.medium_username }}" target="_blank"><i class="fab fa-medium-m"></i></a>
+                    <a href="mailto:{{ site.email }}" target="_blank"><i class="fas fa-envelope-open"></i></a>
+                </article>
+                <article class="blog">
+                    <button id="btn-blog" class="btn-blog">ver blog</button>
+                </article>
+            </article>
+        </section>
+    </section>
+</section>
+
+
+<section id="posts" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <div class="modal-header">
+            <h2>últimos posts</h2>
+        </div>
+        <div class="modal-items"></div>
+        <div class="modal-footer">
+            <a href="https://medium.com/@felipegs07" class="btn-allposts" target="_blank">todos os posts</a>
+        </div>
+    </div>
+</section>
+
+{% include scripts.html %}
+{% include posts.html %}
