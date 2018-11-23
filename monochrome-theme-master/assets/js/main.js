@@ -5,11 +5,15 @@ const btnPortfolio = document.querySelector('#btn-portfolio');
 const blog = document.querySelector('#posts');
 const btnBlog = document.querySelector('#btn-blog');
 const btnCloseModal = document.querySelector('.close-btn');
+const leftSideBtn = document.querySelector('section.right-border');
 
 
 //functions
 function btnClose(){
     btnPortfolio.style.display = 'none';
+}
+function btnShow(){
+    btnPortfolio.style.display = 'block'
 }
 
 function showModal(modalID){
@@ -36,7 +40,13 @@ btnCloseModal.addEventListener('click', () => {
 });
 
 window.addEventListener('click', (e) => {
+    console.log(e);
     if(e.target == blog){
         closeModal();
+    }
+
+    if(e.target == leftSideBtn){
+        portfolio.classList.remove('portfolio-left-fadein');
+        btnShow();
     }
 });

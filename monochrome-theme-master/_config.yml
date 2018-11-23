@@ -13,7 +13,7 @@ skills: >-
   Automatizadores (Gulp, Webpack, Npm); Git; Test-Driven Development (Mocha, Chai, Istanbul). 
 skills_title: Habilidades
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://felipegs07.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: https://www.linkedin.com/in/felipegdasilva/
 github_username:  https://github.com/felipegs07
 medium_username: https://medium.com/@felipegs07
