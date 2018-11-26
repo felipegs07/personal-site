@@ -102,7 +102,9 @@ canvas {
         }
 
         .right-border {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-items: flex-end;
             position: absolute;
             height: 100%;
             width: 100%;
@@ -114,11 +116,9 @@ canvas {
         }
 
         .information-box {
-            display: block;
-            position: absolute;
-            height: 100%;
-            top: 4%;
-            right: 0;
+            max-height: 100%;
+            max-width: 100%;
+            margin-right: 10px;
             color: $secondary-color;
             line-height: 0.1rem;
             text-align: right;
@@ -135,13 +135,19 @@ canvas {
             }
 
             .info-text {
+                width: 100%;
                 font-size: 1rem;
-                margin-top: 20%;
                 line-height: 1.1rem;
-                position: absolute;
-                width:100%;
-                right: 5%;
+                margin-top: 2rem;
+                //right: 5%;
                 text-align: right;
+                display: flex;
+                justify-content:flex-end;
+            }
+
+            .description-text {
+                width: 40%;
+
             }
 
             .info-skills {
@@ -149,8 +155,6 @@ canvas {
             }
 
             .contact {
-                margin-top: 150%;
-                position: absolute;
                 right: 5%;
 
                 a {
@@ -174,7 +178,7 @@ canvas {
                 color: $secondary-color;
                 background: transparent;
                 text-decoration: none;
-                margin-top:170%;
+                margin-top: 20px;
         
                 &:hover{
                     background: $secondary-color;

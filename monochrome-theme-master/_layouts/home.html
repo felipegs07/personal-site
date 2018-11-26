@@ -21,15 +21,17 @@ layout: default
             <article class="information-box">
                 <h1 class="info-name">{{ site.name }}</h1>
                 <h2 class="info-title">{{ site.job_title }}</h2>
-                <p class="info-text">
-                    {{ site.description }}
-                    <br><br>
-                        <span class="info-skills">
-                            {{ site.skills_title }}:
-                        </span>
-                        <br>
-                    {{ site.skills }}
-                </p>
+                <article class="info-text">
+                    <p class="description-text">
+                        {{ site.description }}
+                        <br><br>
+                            <span class="info-skills">
+                                {{ site.skills_title }}:
+                            </span>
+                            <br>
+                        {{ site.skills }}
+                    </p>
+                </article>
                 <article class="contact">
                     <a href="{{ site.github_username }}" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="{{ site.linkedin_username }}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
