@@ -324,7 +324,7 @@ canvas {
     background-color: rgba(0, 0, 0, 0.8);
 
     .modal-content{
-        width: 60%;
+        width: 70%;
         height:450px;
         margin: auto;
         position:fixed;
@@ -334,7 +334,7 @@ canvas {
         text-align: left;
         padding: 30px;
         line-height: 1.4em;
-        overflow: hidden;
+        overflow: scroll;
         animation-name: modalopen;
         animation-duration: 1s;
 
@@ -430,11 +430,24 @@ canvas {
 
             .information-box {
                 top: 10%;
+
+
+                .description-text {
+                    width: 80%;
+                }
             }
         }
 
         .left {
             bottom: 0;
+        }
+
+        .portfolio {
+            width: 99%;
+
+            .project {
+                width: 82%;
+            }
         }
     }
     .container .split {
@@ -446,7 +459,7 @@ canvas {
 
 @media screen and (max-width: 750px){
     .container-portfolio {
-        width: 90%;
+        width: 100%;
         padding: 0 5%;
 
     }

@@ -40,7 +40,6 @@ btnCloseModal.addEventListener('click', () => {
 });
 
 window.addEventListener('click', (e) => {
-    console.log(e);
     if(e.target == blog){
         closeModal();
     }
