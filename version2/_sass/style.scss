@@ -4,6 +4,7 @@ $time: 400ms;
 $hover-side-width: 65%;
 $hover-other-width: 35%;
 @import url('https://fonts.googleapis.com/css?family=Rajdhani');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 html, body {
     margin: 0;
@@ -128,6 +129,8 @@ canvas {
             .info-name {
                 font-size: 1.6rem;
                 color: $secondary-color;
+                margin-bottom: 20px;
+                margin-top: 0;
             }
             .info-title {
                 font-size: 1.1rem;
@@ -281,6 +284,64 @@ canvas {
     padding: 0 20%;
     text-align: justify;
     margin-top: 25vh;
+
+    .container-post-content {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+
+        table {
+            width: 100%;
+            border: #404040 1px solid;
+            border-radius: 3px;
+
+            thead tr th{
+                background-color: #E4E4E4;
+                text-align: center!important;
+                padding: 0.5rem 0;
+            }
+
+            tbody tr td {
+                text-align:center!important;
+                padding: 0.2rem 0;
+            }
+        }
+
+        p {
+            line-height: 1.2rem;
+        }
+
+        pre {
+            padding: 0.8rem 0;
+            width: 100%;
+            background-color: #E4E4E4;
+        }
+
+        h1 {
+            font-size: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba($mono-color, $alpha: 0.3);
+        }
+        h2 {
+            font-size: 1.6rem;
+        }
+        h3 {
+            font-size: 1.4rem;
+        }
+        h4 {
+            font-size: 1.2rem;
+        }
+        h5 {
+            font-size: 1.1rem;
+        }
+        h6 {
+            font-size: 1rem;
+        }
+
+        img {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
 
 }
 

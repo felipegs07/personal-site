@@ -10,6 +10,15 @@ color-text: "#fff"
 github: "https://github.com/felipegs07/bootminimal"
 demo: "https://google.com"
 ---
+## Table
+
+| Number | Next number | Previous number |
+| :------ |:--- | :--- |
+| Five | Six | Four |
+| Ten | Eleven | Nine |
+| Seven | Eight | Six |
+| Two | Three | One |
+
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
@@ -171,4 +180,50 @@ ___
 * [x] Task 1
 * [x] Task 2
 * [ ] Task 3
+
+
+---
+title: Teste de layout!
+layout: post
+date: '2018-08-31 07:49:17 -0300'
+background: "/assets/img/background.jpeg"
+categories: blog
+---
+
+## Title
+
+You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+
+**Here is some bold text**
+
+## Table
+
+| Number | Next number | Previous number |
+| :------ |:--- | :--- |
+| Five | Six | Four |
+| Ten | Eleven | Nine |
+| Seven | Eight | Six |
+| Two | Three | One |
+
+
+## Images
+
+![Image](//danielsclet.github.io/assets/img/background.jpeg)
+
+## code
+
+```javascript
+var foo = function(x) {
+  return(x + 5);
+}
+foo(3)
+```
+
+## Boxes
+
+{: .box-note}
+**Note:** This is a notification box.
+
+{: .box-warning}
+**Warning:** This is a warning box.
 
