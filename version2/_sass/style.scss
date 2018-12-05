@@ -306,13 +306,19 @@ canvas {
             }
         }
 
+        a {
+            color: $mono-color;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
         p {
             line-height: 1.2rem;
         }
 
         pre {
-            padding: 0.8rem 0;
-            width: 100%;
+            padding: 0.8rem 1rem;
+            width: 90%;
             background-color: #E4E4E4;
         }
 
@@ -520,7 +526,7 @@ canvas {
 
 @media screen and (max-width: 750px){
     .container-portfolio {
-        width: 100%;
+        width: 90%;
         padding: 0 5%;
 
     }
@@ -529,7 +535,7 @@ canvas {
 
         .portfolio-title h2 {
             font-size: 1rem;
-            margin-top: 6vh;
+            margin-top: 6.5vh;
         }
     }
 }
