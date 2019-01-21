@@ -7,7 +7,10 @@
     background-color:$primary-color;
 
     animation-name: color-box-fadein;
-    animation-duration: 3s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+
+    .__full {
+        width: 100%;
+    }
 }
