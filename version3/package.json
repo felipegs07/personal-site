@@ -4,7 +4,8 @@
   "description": "A SPA website to portfolio\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[n one-page-site to be my portfolio, apresentation and list my blog posts",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile sass":"gulp sass",
+    "watch": "gulp watch"
   },
   "author": "Felipe G.S",
   "license": "MIT",
