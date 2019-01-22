@@ -9,10 +9,12 @@
     animation-duration: 1s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
+    color: $black-color;
 
     &__text {
         font-size: 1.2rem;
         font-weight: 700;
+        transform: rotate(90deg);
     }
 
     &__arrow {
@@ -20,7 +22,7 @@
         transform: translateX(-50%);
         left: 50%;
         font-weight: 700;
-        font-size: 2rem;
+        font-size: 2.2rem;
         animation-name: scroll-arrow;
         animation-duration: 0.5s;
         animation-iteration-count: infinite;

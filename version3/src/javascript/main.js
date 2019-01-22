@@ -3,6 +3,7 @@ window.addEventListener('wheel', () => {
         const colorBox = document.querySelector('.color-box');
         const olaText = document.querySelector('.ola');
         const scrollEl = document.querySelector('.scroll-arrow');
+        const intro = document.querySelector('.intro');
 
 
         colorBox.classList.remove('color-box--opening');
@@ -12,5 +13,7 @@ window.addEventListener('wheel', () => {
         olaText.classList.add('ola--close');
 
         scrollEl.classList.add('u-close');
+
+        intro.classList.add('intro--show');
     }, 1000)
 });
