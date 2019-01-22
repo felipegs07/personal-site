@@ -11,15 +11,25 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 100;
-    animation-name: ola-fadein;
-    animation-duration: 1s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    opacity: 0;
 
     &__text{
         font-size: 15rem;
         font-weight: 700;
+    }
+
+    &--show {
+        animation-name: ola-fadein;
+        animation-duration: 0.8s;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+
+    &--close {
+        animation-name: ola-fadeout;
+        animation-duration: 0.8s;
+        animation-fill-mode: forwards;
+        opacity: 1;
     }
 
     span {

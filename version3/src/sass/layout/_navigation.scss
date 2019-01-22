@@ -1,0 +1,31 @@
+.menu {
+
+
+    &__button {
+        height: 3rem;
+        width: 3rem;
+        position: absolute;
+        display: block;
+        top:1rem;
+        right: 1rem;
+        z-index: 101;
+        cursor: pointer;
+
+        &-line {
+            width: 2.5rem;
+            height: 0.3rem;
+            margin: 0 0 0.5rem;
+            background-color: $black-color;
+            float: right;
+            transition: all 0.4s ease-in-out;
+        }
+
+        :nth-child(odd){
+            width: 1.9rem;
+        }
+
+        :hover > &-line {
+            width: 2.5rem;
+        }
+    }
+}
