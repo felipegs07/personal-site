@@ -1,6 +1,5 @@
 .menu {
 
-
     &__button {
         height: 3rem;
         width: 3rem;
@@ -32,6 +31,37 @@
 
         :hover > &-line {
             width: 3rem;
+        }
+    }
+
+    &__nav {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        right: 2%;
+        text-align: right;
+        z-index: 1004;
+        padding-right: 0.5rem;
+        opacity: 0;
+        //border-right: 0.5rem solid $tertiary-color;
+        list-style: none;
+        font-size: 2rem;
+        font-weight: 700;
+        animation-name: default-fadein;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+
+
+        &-item {
+            margin-bottom: 1rem;
+            transition: all 1s;
+
+            &:hover {
+                background-color: $tertiary-color;
+                cursor: pointer;
+            }
+
         }
     }
 }
