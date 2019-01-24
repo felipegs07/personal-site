@@ -1,4 +1,4 @@
-<!-- script in html for make ajax requests works in gh pages -->
+// script in html for make ajax requests works in gh pages -->
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script>
     function loadPosts(){

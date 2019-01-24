@@ -3,10 +3,13 @@
     position: absolute;
     left: 4%;
     bottom: 20%;
-    font-size: 4rem;
     font-weight: 700;
     z-index: 103;
     opacity: 0;
+
+    &__text > p {
+        font-size: 4rem;
+    }
 
     &__name {
         color: $white-color;
