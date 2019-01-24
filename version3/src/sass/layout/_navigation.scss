@@ -20,9 +20,11 @@
             width: 3rem;
             height: 0.3rem;
             margin: 0 0 0.5rem;
-            background-color: $black-color;
             float: right;
             transition: all 0.4s ease-in-out;
+
+            &--black {background-color: $black-color;}
+            &--white {background-color: $white-color;}
         }
 
         :nth-child(odd){
@@ -43,7 +45,6 @@
         z-index: 1004;
         padding-right: 0.5rem;
         opacity: 0;
-        //border-right: 0.5rem solid $tertiary-color;
         list-style: none;
         font-size: 2rem;
         font-weight: 700;
@@ -63,5 +64,8 @@
             }
 
         }
+
+
     }
+
 }

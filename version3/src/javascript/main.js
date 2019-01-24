@@ -1,6 +1,6 @@
 window.addEventListener('wheel', () => {
     setTimeout(() => {
-        const colorBox = document.querySelector('.color-box');
+        const colorBox = document.querySelector('.home');
         const olaText = document.querySelector('.ola');
         const scrollEl = document.querySelector('.scroll-arrow');
         const intro = document.querySelector('.intro');

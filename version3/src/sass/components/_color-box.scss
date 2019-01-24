@@ -3,7 +3,6 @@
     position: absolute;
     top: 0;
     right: 0;
-    background-color: $secondary-color;
 
     &--opening {
         width: 100%;
@@ -20,7 +19,20 @@
         animation-timing-function: ease-in-out; 
     }
 
-    &--menu {
-
+    &--page {
+        width: 100%;
+        animation-name: color-box-page;
+        animation-duration: 1s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out; 
     }
+
+    
+    &--primary-color {background-color: $primary-color;}
+    &--secondary-color {background-color: $secondary-color;}
+    &--tertiary-color {background-color: $tertiary-color;}
+    &--quaternary-color {background-color: $quaternary-color;}
+    &--quinary-color {background-color: $quinary-color;}
+
 }
