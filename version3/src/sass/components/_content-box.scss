@@ -1,3 +1,17 @@
 .content-box {
-    width: 75%;
+    width: 76%;
+    height: 100%;
+    padding: 2rem;
+    position: relative;
+    float: left;
+    overflow: scroll;
+    overflow-x: hidden;
+
+    &__title {
+        position: absolute;
+        transform: rotate(-90deg);
+        right: -19%;
+        top: 40%;
+        display: block;
+    }
 }
