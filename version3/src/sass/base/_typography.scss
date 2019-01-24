@@ -38,14 +38,17 @@ html {
     }
 }
 
-h1 {font-size: 2.2rem; font-weight: 300}
+h1 {font-size: 2.4rem; font-weight: 300}
 h2 {font-size: 2rem;font-weight: 300}
 h3 {font-size: 1.8rem;font-weight: 300}
 h4 {font-size: 1.6rem;font-weight: 300}
 h5 {font-size: 1.4rem;font-weight: 300}
-h6 {font-size: 1.2rem;font-weight: 300}
+h6 {font-size: 1rem;font-weight: 300}
 
-.font-xl {font-size: 8rem; font-weight: 700}
-.font-lg {font-size: 6rem; font-weight: 700}
-.font-md {font-size: 4rem; font-weight: 700}
-.font-sm {font-size: 2rem; font-weight: 700}
+.font-xl {font-size: 8rem;}
+.font-lg {font-size: 6rem;}
+.font-md {font-size: 4rem;}
+.font-sm {font-size: 3rem;}
+.font-xs {font-size: 2rem;}
+
+p {font-size: 1.5rem}
