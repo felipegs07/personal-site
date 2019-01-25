@@ -28,6 +28,15 @@
         animation-timing-function: ease-in-out; 
     }
 
+    &--portfolio {
+        width: 100%;
+        animation-name: color-box-portfolio;
+        animation-duration: 1s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out; 
+    }
+
     
     &--primary-color {background-color: $primary-color;}
     &--secondary-color {background-color: $secondary-color;}

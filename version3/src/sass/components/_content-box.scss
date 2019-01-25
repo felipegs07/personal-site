@@ -7,6 +7,11 @@
     overflow: scroll;
     overflow-x: hidden;
 
+    &--portfolio {
+        width: 100%;
+        overflow: hidden;
+    }
+
     &__image {
         img {
             width: 15%;
@@ -31,6 +36,13 @@
             right: -17%;
             top: 40%;
             display: block;
+        }
+
+        &--portfolio {
+            z-index: 1005;
+            color: $white-color;
+            top: 25%;
+            width: 50%;
         }
     }
 
@@ -57,4 +69,10 @@
         }
 
     }
+
+    &__slider {
+        position: absolute;
+        top: 60%;
+    }
+
 }
