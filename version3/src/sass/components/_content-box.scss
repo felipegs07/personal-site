@@ -9,14 +9,15 @@
 
     &__image {
         img {
-            width: 20%;
+            width: 15%;
             border-radius: 50%;
             border: 0.5rem solid $black-color;
             transition: all 0.5s;
             filter: grayscale(70%);
 
             &:hover {
-                border: 0.5rem solid $primary-color;
+                border: 0.5rem solid $tertiary-color;
+                filter: grayscale(20%);
             }
         }
     }
