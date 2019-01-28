@@ -31,17 +31,69 @@
             </section>
             <section class="content-box__slider">
                 <div class="my-slider">
-                        <div>teste</div>
-                        <div>teste2</div>
-                        <div>Teste3</div>
+                        <article class="project-box">
+                            <section class="project-box__thumb">
+                                <img class="project-box__thumb" src="https://facebook.github.io/create-react-app/img/logo-og.png">
+                            </section>
+                            <h5>Projeto Todo List React 1</h5>
+                        </article>
+                        <article class="project-box">
+                            <section class="project-box__thumb">
+                                <img class="project-box__thumb" src="https://facebook.github.io/create-react-app/img/logo-og.png">
+                            </section>
+                            <h5>Projeto Todo List React 2</h5>
+                        </article>
+                        <article class="project-box">
+                            <section class="project-box__thumb">
+                                <img class="project-box__thumb" src="https://facebook.github.io/create-react-app/img/logo-og.png">
+                            </section>
+                            <h5>Projeto Todo List React 3</h5>
+                        </article>
+                        <article class="project-box">
+                            <section class="project-box__thumb">
+                                <img class="project-box__thumb" src="https://facebook.github.io/create-react-app/img/logo-og.png">
+                            </section>
+                            <h5>Projeto Todo List React 4</h5>
+                        </article>
+                        <article class="project-box">
+                            <section class="project-box__thumb">
+                                <img class="project-box__thumb" src="https://facebook.github.io/create-react-app/img/logo-og.png">
+                            </section>
+                            <h5>Projeto Todo List React 5</h5>
+                        </article>
+                        <article class="project-box">
+                            <section class="project-box__thumb">
+                                <img class="project-box__thumb" src="https://facebook.github.io/create-react-app/img/logo-og.png">
+                            </section>
+                            <h5>Projeto Todo List React 6</h5>
+                        </article>
+                        
                 </div>
             </section>
         </section>
 
-        <section class="color-box color-box--quaternary-color color-box--portfolio"></section>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
-
     </section>
-
+    <section class="color-box color-box--quaternary-color color-box--portfolio"></section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
+    
+    <script>
+        var slider = tns({
+          container: '.my-slider',
+          items: 3,
+          mouseDrag: true,
+          autoWidth: true,
+          responsive: {
+            640: {
+              edgePadding: 20,
+              gutter: 20,
+              items: 2
+            },
+            900: {
+              items: 3,
+              fixedWidth:
+            }
+          }
+        });
+      </script>
 </body>
 </html>
