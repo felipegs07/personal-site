@@ -1,15 +1,12 @@
 .content-box {
-    width: 100vw;
+    width: 77%;
     height: 100%;
     padding: 1rem;
     position: relative;
     float: left;
     overflow: scroll;
+    overflow-x: hidden;
 
-    &--portfolio {
-        width: 100%;
-        overflow: hidden;
-    }
 
     &__image {
         img {
@@ -71,18 +68,7 @@
     }
 
     &__slider {
-        position: absolute;
-        top: 51%;
         width: 100%;
-
-        article {
-            width: 33.33333%;
-            display: inline-block;
-
-            img {
-                width: 100%;
-            }
-        }
     }
 
 }
