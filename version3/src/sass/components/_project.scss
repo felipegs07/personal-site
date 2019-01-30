@@ -1,6 +1,6 @@
 .project-item {
     width: 100%;
-    height: 15rem;
+    height: 12rem;
     position: relative;
 
     &__image {
@@ -16,11 +16,21 @@
         transform: translate(-50%, -50%);
         color: $white-color;
         background-color: $tertiary-color;
+        transition: all 0.7s;
 
     }
 
     &--active {
-        height: 30rem;
+        height: 25rem;
+    }
+
+    &:hover {
+        cursor:pointer;
+    }
+
+    &:hover > &__title {
+        background-color: $primary-color;
+        color: $black-color;
     }
 
 }
