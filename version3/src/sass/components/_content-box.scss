@@ -23,26 +23,6 @@
         }
     }
 
-    &__title {
-        position: relative;
-
-        &--vertical {
-            position: absolute;
-            transform: rotate(-90deg);
-            right: -17%;
-            top: 40%;
-            display: block;
-        }
-
-        &--portfolio {
-            z-index: 1005;
-            color: $white-color;
-            top: 25%;
-            width: 50%;
-            margin-left: 4rem;
-        }
-    }
-
     &__text {
         width: 60%;
 
