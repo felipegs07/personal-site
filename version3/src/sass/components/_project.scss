@@ -2,6 +2,7 @@
     width: 49%;
     display: inline-block;
     margin-bottom: 2rem;
+    text-align: center;
 
     &__image {
         width: 100%;
@@ -24,10 +25,6 @@
 
     &--active {
         height: 25rem;
-    }
-
-    &:hover {
-        cursor:pointer;
     }
 
 }
