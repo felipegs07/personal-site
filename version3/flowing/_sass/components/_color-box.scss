@@ -1,0 +1,47 @@
+.color-box {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &--opening {
+        width: 100%;
+        animation-name: color-box-fadein;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out; 
+    }
+
+    &--full {
+        animation-name: color-box-fadeout;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out; 
+    }
+
+    &--page {
+        width: 100%;
+        animation-name: color-box-page;
+        animation-duration: 1s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out; 
+    }
+
+    &--portfolio {
+        width: 100%;
+        animation-name: color-box-portfolio;
+        animation-duration: 0.5s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out; 
+    }
+
+    
+    &--primary-color {background-color: $primary-color;}
+    &--secondary-color {background-color: $secondary-color;}
+    &--tertiary-color {background-color: $tertiary-color;}
+    &--quaternary-color {background-color: $quaternary-color;}
+    &--quinary-color {background-color: $quinary-color;}
+
+}

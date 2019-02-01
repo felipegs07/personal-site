@@ -1,0 +1,54 @@
+.content-box {
+    width: 77%;
+    height: 100%;
+    padding: 1rem;
+    position: relative;
+    float: left;
+    overflow: scroll;
+    overflow-x: hidden;
+
+
+    &__image {
+        img {
+            width: 15%;
+            border-radius: 50%;
+            border: 0.5rem solid $black-color;
+            transition: all 0.5s;
+            filter: grayscale(70%);
+
+            &:hover {
+                border: 0.5rem solid $tertiary-color;
+                filter: grayscale(20%);
+            }
+        }
+    }
+
+    &__text {
+        width: 60%;
+
+        p {
+            margin-top: 1rem;
+            line-height: 1.3em;
+        }
+    }
+
+    &__posts {
+        width: 100%;
+        margin-top: 4rem;
+        margin-left: 0.5rem;
+
+        article {
+            margin-bottom: 2rem;
+        }
+
+        span {
+            color: $quinary-color;
+        }
+
+    }
+
+    &__slider {
+        width: 100%;
+    }
+
+}
