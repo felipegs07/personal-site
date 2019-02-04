@@ -2,4 +2,18 @@
 layout: default
 ---
 
-{{ content }}
+{% include header.html %}
+
+<section class="container">
+    {% include nav-white.html %}
+    
+    <section class="content-box">
+        <section class="post">
+            {{ content }}
+        </section>
+    </section>
+
+    <section class="color-box color-box--black-color color-box--page"></section>
+
+</section>
+

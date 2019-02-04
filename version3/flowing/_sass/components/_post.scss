@@ -1,0 +1,92 @@
+.post {
+    padding: 2%;
+
+    p {
+        margin-top: 2rem;
+        line-height: 1.2em;
+    }
+
+    table {
+        width: 100%;
+        border: 1px solid rgba($black-color, $alpha: 0.6);
+        font-size: 1.4rem;
+
+
+        thead tr th{
+            background-color: #E4E4E4;
+            text-align: center!important;
+            padding: 0.5rem 0;
+        }
+
+        tbody tr td {
+            text-align:center!important;
+            padding: 0.2rem 0;
+        }
+    }
+
+    a {
+        color: $black-color;
+        font-weight: bold;
+        text-decoration: underline;
+    } 
+    pre {
+        margin: 1rem 0;
+        padding: 1rem;
+        width: 90%;
+        font-size: 1.8rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+        padding-bottom: 1.5rem;
+        font-weight: bold;
+        line-height: 1em;
+
+    }
+    h2 {
+        font-size: 3rem;
+        font-weight: bold;
+        padding: 1rem 0 0.5rem;
+    }
+    h3 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        padding-bottom: 0.5rem;
+    }
+    h4 {
+        font-size: 2rem;
+        font-weight: bold;
+        padding-bottom: 0.5rem;
+    }
+    h5 {
+        font-size: 1.6rem;
+        font-weight: bold;
+        padding-bottom: 0.5rem;
+    }
+    h6 {
+        font-size: 1.4rem;
+        font-weight: bold;
+        padding-bottom: 0.5rem;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    blockquote {
+        padding-left: 0.5rem;
+        border-left: 0.5rem solid $quaternary-color;
+        margin: 1rem 0 1rem 2rem;
+    }
+
+   li {
+       font-size: 1.5rem;
+   }
+
+   ul, ol {
+       padding-left: 2rem;
+   }
+
+}

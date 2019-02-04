@@ -18,6 +18,7 @@ linkedin: https://www.linkedin.com/in/felipegdasilva/
 github:  https://github.com/felipegs07
 
 # Build settings
+highlighter: rouge
 markdown: kramdown
 sass:
     style: compressed

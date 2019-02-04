@@ -8,7 +8,15 @@ layout: default
     {% include nav-black.html %}
     
     <section class="content-box">
-        <section class="content-box__posts"></section>
+        <section class="content-box__posts">
+            {% for post in site.posts %}
+                <article>
+                    <a  class="post-link" href="{{ post.url | prepend: base.url }}" target="_blank">
+                        <h4><strong>{{ post.title }}</strong><span> #{{ post.desc }}</span></h4>
+                    </a>
+                </article>
+            {% endfor %}
+        </section>
     </section>
 
     <section class="color-box color-box--primary-color color-box--page"></section>
