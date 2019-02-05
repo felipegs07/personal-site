@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{% include header.html %}
+
 <section class="container">
     {% include nav-black.html %}
     
@@ -12,14 +14,14 @@ layout: default
         </article>
         
         <article class="scroll-arrow">
-            <span class="scroll-arrow__text">scroll</span>
+            <span class="scroll-arrow__text"><p>scroll</p></span>
             <span class="scroll-arrow__arrow">&#8595;</span>
         </article>
 
         <article class="intro">
             <p class="intro__text">
                 eu sou <span class="intro__name">&lt;Felipe  &frasl; &gt;,</span> um<br>
-                <span class="intro__title" data-wait="3000" data-words='["desenvolvedor front-end.","desenvolvedor web.", "programador júnior."]'></span>
+                <span class="intro__title" data-wait="3000" data-words='{{ site.home_titles }}'></span>
             </p>
         </article>
 

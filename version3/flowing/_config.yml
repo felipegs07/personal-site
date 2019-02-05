@@ -16,6 +16,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://felipegs07.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin: https://www.linkedin.com/in/felipegdasilva/
 github:  https://github.com/felipegs07
+home_titles: '["desenvolvedor front-end.","desenvolvedor web.", "programador júnior.", "desenvolvedor React.", "sommelier de Milk Shake."]'
 
 # Build settings
 highlighter: rouge

@@ -1,7 +1,7 @@
 .scroll-arrow {
     position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
+    transform: translateX(-51%);
+    left: 51%;
     bottom:4rem;
     z-index: 103;
     opacity: 0;
@@ -11,18 +11,19 @@
     animation-fill-mode: forwards;
     color: $black-color;
 
-    &__text {
+    &__text > p {
         font-size: 1.2rem;
         font-weight: 700;
         transform: rotate(90deg);
+        letter-spacing: 0.1rem;
     }
 
     &__arrow {
         position: absolute;
-        transform: translateX(-50%);
+        transform: translateX(-49%);
         left: 50%;
         font-weight: 700;
-        font-size: 2.2rem;
+        font-size: 2.3rem;
         animation-name: scroll-arrow;
         animation-duration: 0.5s;
         animation-iteration-count: infinite;
