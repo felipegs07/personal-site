@@ -1,6 +1,5 @@
 const menuBtn = document.querySelector('.menu__button');
 const menu = document.querySelector('.menu__nav');
-console.log('teste');
 
 let showMenu = false;
 

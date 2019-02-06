@@ -78,8 +78,8 @@
 
     blockquote {
         padding-left: 0.5rem;
-        border-left: 0.5rem solid $quaternary-color;
-        margin: 1rem 0 1rem 2rem;
+        border-left: 0.5rem solid $tertiary-color;
+        margin: 1rem 0 1rem 3rem;
     }
 
    li {
@@ -88,6 +88,17 @@
 
    ul, ol {
        padding-left: 2rem;
+   }
+
+   &__info {
+       color: $gray-color;
+       //font-weight: bold;
+       margin-left: 0.5rem;
+       margin-bottom: 5rem;
+   }
+
+   &__comment {
+       margin-top: 10rem;
    }
 
 }

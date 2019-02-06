@@ -6,19 +6,25 @@ job_title: Desenvolvedor Front-end
 description: >-
   Eu sou um desenvolvedor front-end júnior com foco em me desenvolver na criação de web apps e UI. 
   Como programador estou em busca constante de melhores práticas e conhecimento. 
-  Gosto de aprender coisas novas, me interesso por javascript e seus frameworks, design de interface/UX e ]
+  Gosto de aprender coisas novas, me interesso por javascript e seus frameworks, design de interface/UX e
   Test-Driven Development. 
-skills: >-
-  HTML; Responsive Design (Mobile First); CSS 3 (Sass); Css Frameworks (Bootstrap); Javascript (Testes); 
-  Automatizadores (Gulp, Webpack, Npm); Git; Test-Driven Development (Mocha, Chai, Istanbul). 
+skills:
+  - HTML 5;
+  - CSS 3 (sass/scss); Responsive Design; 
+  - Javascript (ES6+, JQuery); 
+  - React.js (redux, react-router, hooks); 
+  - Automatizadores (Gulp, Webpack, npm);
+  - Git, GitHub;
+  - Test-Driven Development (Mocha, Chai).
 skills_title: Habilidades
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://felipegs07.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin: https://www.linkedin.com/in/felipegdasilva/
 github:  https://github.com/felipegs07
-home_titles: '["desenvolvedor front-end.","desenvolvedor web.", "programador júnior.", "desenvolvedor React.", "sommelier de Milk Shake."]'
+home_titles: '["desenvolvedor front-end.","desenvolvedor web.", "programador júnior.", "desenvolvedor React.", "apaixonado por CSS."]'
 
 # Build settings
+permalink: /:title/
 highlighter: rouge
 markdown: kramdown
 sass:

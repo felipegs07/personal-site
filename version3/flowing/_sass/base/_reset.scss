@@ -19,3 +19,26 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+::selection {
+    background: $secondary-color;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $background-color; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $gray-color; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $secondary-color; 
+  }

@@ -12,24 +12,17 @@ layout: default
             <img src="/assets/img/photo.jpg" alt="foto do rosto de Felipe S">
         </section>
         <section class="content-box__text">
-            <h1 class="font-sm">Felipe Gustavo</h1>
-            <h2>Desenvolvedor Front-end</h2>
+            <h1 class="font-sm">{{ site.name }}</h1>
+            <h2>{{ site.job_title }}</h2>
             <p>
-                Eu sou um desenvolvedor front-end júnior com foco em me desenvolver na criação de web apps e UI. 
-                Como programador estou em busca constante de melhores práticas e conhecimento. 
-                Gosto de aprender coisas novas, me interesso por javascript, React.js e seu ecossistema, design de interface/UX 
-                e Test-Driven Development.
+               {{ site.description }}
             </p>
             <br>
-            <h3 class="font-xs">Habilidades:</h3>
+            <h3 class="font-xs">{{ site.skills_title }}:</h3>
             <p>
-                HTML 5;<br>
-                CSS 3 (sass/scss); Responsive Design; <br>
-                Javascript (ES6+, JQuery); <br>
-                React.js (redux, react-router, hooks); <br>
-                Automatizadores (Gulp, Webpack, npm);<br> 
-                Git, GitHub; <br>
-                Test-Driven Development (Mocha, Chai).<br>
+                {% for skill in site.skills %}
+                   {{ skill }}<br>
+                {% endfor %}
             </p>
         </section>
 
