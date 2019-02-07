@@ -2,7 +2,7 @@
     color: $black-color;
     position: absolute;
     left: 4%;
-    bottom: 20%;
+    bottom: 12%;
     font-weight: 700;
     z-index: 103;
     opacity: 0;
@@ -29,6 +29,10 @@
             animation-direction: alternate;
             animation-iteration-count: infinite;
         }
+    }
+
+    &__button {
+        margin-top: .5rem;
     }
 
     &--show {

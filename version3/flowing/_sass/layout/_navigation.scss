@@ -58,6 +58,7 @@
         border-right: 0.6rem solid $tertiary-color;
         visibility: hidden;
         transition: all 0.3s ease-in-out;
+        opacity: 0;
 
 
         &-item {
@@ -78,6 +79,7 @@
         &.show{
             visibility: visible;
             transform: translate(0%, -50%);
+            opacity: 1;
         }
 
 
