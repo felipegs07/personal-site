@@ -1,10 +1,15 @@
 .project-item {
-    width: 49%;
+    width: 48%;
     display: inline-block;
     margin-bottom: 2rem;
     text-align: center;
     border-radius: 1rem;
     padding-bottom: 1rem;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+
+    @include responsive(phone){
+        width: 100%
+    }
 
     &__image {
         width: 100%;
@@ -33,6 +38,10 @@
 
     &--white {
         background-color: $white-color;
+    }
+
+    &:nth-child(odd){
+        margin-right: 2%;
     }
 
 }

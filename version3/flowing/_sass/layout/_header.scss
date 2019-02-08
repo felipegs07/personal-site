@@ -17,7 +17,7 @@ header {
         top: 50%;
         left: 50%;
         opacity: 0;
-        animation: default-fadein 0.4s ease-in-out 2.5s forwards;
+        animation: default-fadein 0.4s ease-in-out 1s forwards;
 
         a {
             display: inline;
@@ -40,7 +40,7 @@ header {
         top: 50%;
         left: 1rem;
         opacity: 0;
-        animation: default-fadein 0.4s ease-in-out 2.5s forwards;
+        animation: default-fadein 0.4s ease-in-out 1s forwards;
     }
 
 }

@@ -6,6 +6,12 @@
     float: left;
     overflow: scroll;
     overflow-x: hidden;
+    opacity: 0;
+    animation: default-fadein .5s ease-in-out 1s forwards;
+
+    @include responsive(phone){
+        width: 85%;
+    }
 
 
     &__image {
@@ -16,6 +22,10 @@
             transition: all 0.5s;
             filter: grayscale(70%);
 
+            @include responsive(phone){
+                width: 50%;
+            }
+
             &:hover {
                 border: 0.5rem solid $tertiary-color;
                 filter: grayscale(20%);
@@ -25,6 +35,13 @@
 
     &__text {
         width: 60%;
+
+        @include responsive(tab-port){
+            width: 90%;
+        }
+        @include responsive(phone){
+            width: 100%;
+        }
 
         p {
             margin-top: 1rem;

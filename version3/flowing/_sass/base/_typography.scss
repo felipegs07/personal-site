@@ -16,6 +16,10 @@ html {
     &__text{
         font-size: 15rem;
         font-weight: 700;
+        
+        @include responsive(phone){
+            font-size: 12rem;
+        }
     }
 
     &--show {
@@ -27,10 +31,8 @@ html {
     }
 
     &--close {
-        animation-name: ola-fadeout;
-        animation-duration: 0.8s;
-        animation-fill-mode: forwards;
-        opacity: 1;
+        //animation: ola-fadeout .8s forwards;
+        animation: ola-fadeout .8s ease-in-out forwards;
     }
 
     span {

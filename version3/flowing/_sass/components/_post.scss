@@ -29,6 +29,12 @@
         color: $black-color;
         font-weight: bold;
         text-decoration: underline;
+        transition: all .3s;
+
+        &:hover {
+            background-color: $secondary-color;
+            text-decoration: none;
+        }
     } 
     pre {
         margin: 1rem 0;

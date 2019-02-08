@@ -6,7 +6,7 @@ categories:
     - teste
 desc: "teste"
 page-name: "post"
-online: false
+online: true
 ---
 
 Olá, estamos testando o poder do admin e sua criação de posts. Vou tentar formatar algumas coisas para testar.

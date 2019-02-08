@@ -1,7 +1,7 @@
 .menu {
 
     &__button {
-        width: 2.5rem;
+        width: 25px;
         position: absolute;
         display: block;
         top:1rem;
@@ -14,14 +14,14 @@
         animation-delay: 1s;
         animation-fill-mode: forwards;
         transition: all 0.2s ease-out;
-        
+    
 
         &-line {
-            width: 2.5rem;
-            height: 0.2rem;
-            margin: 0 0 0.6rem;
+            width: 25px;
+            height: 2px;
+            margin: 0 0 6px;
             float: right;
-            transition: all 0.3s ease-in-out;
+            transition: all 0.2s ease-in-out;
 
             &--black {background-color: $black-color;}
             &--white {background-color: $white-color;}
