@@ -29,7 +29,15 @@
     }
 
     &--mobile {
-        animation: color-box-mobile .4s ease-in-out forwards;
+        @include responsive(phone){
+            animation: color-box-mobile .4s ease-in-out forwards
+        }
+    }
+
+    &--home-mobile {
+        @include responsive(phone){
+            z-index: 1003;
+        }
     }
 
     

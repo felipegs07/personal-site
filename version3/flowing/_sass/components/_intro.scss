@@ -2,7 +2,7 @@
     color: $black-color;
     position: absolute;
     left: 4%;
-    bottom: 10%;
+    top: 60%;
     font-weight: 700;
     z-index: 103;
     opacity: 0;
@@ -10,25 +10,31 @@
     @include responsive(big-desktop){
         bottom: 9%;
     }
-    @include responsive(phone){
-        bottom: 23%;
+    @include responsive(tab-port){
+        bottom: 16%;
     }
+    @include responsive(phone){
+        top: 58%;
+    }
+
 
     &__text {
         font-size: 4rem;
-        
-        @include responsive(tab-land){
-            font-size: 3.5rem
-        }
-        @include responsive(phone){
-            font-size: 2.2rem;
-        }
 
         height: 2.5em;
         overflow: hidden;
         -webkit-line-clamp: 2;
         display: -webkit-box;
         -webkit-box-orient: vertical;
+
+        @include responsive(tab-land){
+            font-size: 3.5rem
+        }
+        @include responsive(phone){
+            height: 3em;
+            font-size: 2.2rem;
+            -webkit-line-clamp: 2.5;
+        }
 
     }
 

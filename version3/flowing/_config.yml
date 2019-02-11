@@ -12,7 +12,7 @@ skills:
   - HTML 5;
   - CSS 3 (sass/scss); Responsive Design; 
   - Javascript (ES6+, JQuery); 
-  - React.js (redux, react-router, hooks); 
+  #- React.js (redux, react-router, hooks); 
   - Automatizadores (Gulp, Webpack, npm);
   - Git, GitHub;
   - Test-Driven Development (Mocha, Chai).
@@ -21,8 +21,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://felipegs07.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin: https://www.linkedin.com/in/felipegdasilva/
 github:  https://github.com/felipegs07
-home_titles: '["desenvolvedor front-end.","desenvolvedor web.", "programador júnior.", "desenvolvedor React.", "apaixonado por CSS."]'
-
+home_titles: '["desenvolvedor front-end.","desenvolvedor web.", "programador júnior.", "apaixonado por CSS."]'
+#"desenvolvedor React."
 # Build settings
 permalink: /:title/
 highlighter: rouge
