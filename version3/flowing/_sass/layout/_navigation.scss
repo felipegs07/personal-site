@@ -1,7 +1,7 @@
 .menu {
 
     &__button {
-        width: 25px;
+        width: 30px;
         position: absolute;
         display: block;
         top:1rem;
@@ -15,14 +15,21 @@
         animation-fill-mode: forwards;
         transition: all 0.2s ease-out;
     
+        &:hover &-line:nth-child(odd){
+            width: 30px
+        }
 
         &-line {
             width: 25px;
             height: 2px;
-            margin: 0 0 6px;
+            margin: 0 0 5px;
             float: right;
             transition: all 0.2s ease-in-out;
 
+            &:nth-child(2){
+                width: 30px; 
+            }
+            
             &--black {background-color: $black-color;}
             &--white {background-color: $white-color;}
         }
@@ -80,6 +87,10 @@
             visibility: visible;
             transform: translate(0%, -50%);
             opacity: 1;
+
+            @include responsive(phone){
+                transform: translate(-15%, -50%);
+            }
         }
 
 

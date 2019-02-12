@@ -8,6 +8,7 @@
         transition: all .2s;
         position: relative;
         font-size: $default-font-size;
+        font-weight: normal;
     }
 
     &::after {
@@ -38,6 +39,15 @@
 
         &::after {
             background-color: $secondary-color;
+        }
+    }
+
+    &--quinary {
+        background-color: $quinary-color;
+        color: $white-color;
+
+        &::after {
+            background-color: $quinary-color;
         }
     }
 

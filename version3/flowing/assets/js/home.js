@@ -1,0 +1,1 @@
+setTimeout(function(){var o=document.querySelector(".home"),e=document.querySelector(".ola"),s=document.querySelector(".intro");o.classList.remove("color-box--opening"),o.classList.add("color-box--full"),e.classList.remove("ola--show"),e.classList.add("ola--close"),s.classList.add("intro--show")},2e3);

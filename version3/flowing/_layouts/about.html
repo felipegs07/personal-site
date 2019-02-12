@@ -2,33 +2,32 @@
 layout: default
 ---
 
-{% include header.html %}
-
 <section class="container">
-    {% include nav-white.html %}
-    
-    <section class="content-box">
-        <section class="content-box__image">
-            <img src="/assets/img/photo.jpg" alt="Foto de um homem barbado">
-        </section>
-        <section class="content-box__text">
-            <h1 class="font-sm">{{ site.name }}</h1>
-            <h2>{{ site.job_title }}</h2>
-            <p>
-               {{ site.description }}
-            </p>
-            <br>
-            <h3 class="font-xs">{{ site.skills_title }}:</h3>
-            <p>
-                {% for skill in site.skills %}
-                   {{ skill }}<br>
-                {% endfor %}
-            </p>
-        </section>
+    <section class="container__view">
+        {% include header.html %}
+        {% include nav-white.html %}
+        
+        <section class="content-box">
+            <section class="content-box__image">
+                <img src="/assets/img/photo.jpg" alt="Foto de um homem barbado">
+            </section>
+            <section class="content-box__text">
+                <h1 class="font-sm">{{ site.name }}</h1>
+                <h2>{{ site.job_title }}</h2>
+                <p>
+                {{ site.description }}
+                </p>
+                <br>
+                <h3 class="font-xs">{{ site.skills_title }}:</h3>
+                <p>
+                    {% for skill in site.skills %}
+                    {{ skill }}<br>
+                    {% endfor %}
+                </p>
+            </section>
 
+        </section>
+        <section class="color-box color-box--quinary-color color-box--page"></section>
     </section>
-
-    <section class="color-box color-box--quinary-color color-box--page"></section>
-
 </section>
 

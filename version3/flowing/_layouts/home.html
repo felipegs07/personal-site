@@ -2,35 +2,38 @@
 layout: default
 ---
 
-{% include header.html %}
+
 
 <section class="container">
-    {% include nav-black.html %}
-    
-    <section class="content-box"></section>
-
-        <article class="ola ola--show">
-            <p class="ola__text">Olá<span>.</span></p>
-        </article>
-
-        <article class="intro">
-            <p class="intro__text">
-                eu sou <span class="intro__name">&lt;Felipe  &frasl; &gt;,</span> um<br>
-                <span class="intro__title" data-wait="3000" data-words='{{ site.home_titles }}'></span>
-            </p>
-            <article class="intro__button">
-                <a href="/about" class="btn btn--white">veja meu trabalho</a>
-            </article>
-        </article>
+    <section class="container__view">
+        {% include header.html %}
+        {% include nav-black.html %}
         
+        <section class="content-box"></section>
 
-        <!--<article class="scroll-arrow">
-            <span class="scroll-arrow__text"><p>scroll</p></span>
-            <span class="scroll-arrow__arrow">&#8595;</span>
-        </article>-->
+            <article class="ola ola--show">
+                <p class="ola__text">Olá<span>.</span></p>
+            </article>
 
-    <section class="color-box color-box--secondary-color color-box--opening home"></section>
+            <article class="intro">
+                <p class="intro__text">
+                    eu sou <span class="intro__name">&lt;Felipe  &frasl; &gt;,</span> um<br>
+                    <span class="intro__title" data-wait="3000" data-words='{{ site.home_titles }}'></span>
+                </p>
+                <article class="intro__button">
+                    <a href="/about" class="btn btn--quinary">me conheça</a>
+                </article>
+            </article>
+            
 
+            <!--<article class="scroll-arrow">
+                <span class="scroll-arrow__text"><p>scroll</p></span>
+                <span class="scroll-arrow__arrow">&#8595;</span>
+            </article>-->
+
+        <section class="color-box color-box--secondary-color color-box--opening home"></section>
+
+    </section>
 </section>
 
 {% include home-scripts.html %}

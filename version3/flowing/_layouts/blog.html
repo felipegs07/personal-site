@@ -2,26 +2,27 @@
 layout: default
 ---
 
-{% include header.html %}
-
 <section class="container">
-    {% include nav-black.html %}
-    
-    <section class="content-box">
-        <section class="content-box__posts">
-            {% for post in site.posts %}
-                {% if post.online %}
-                    <article>
-                        <a  class="post-link" href="{{ post.url | prepend: base.url }}" target="_blank">
-                            <h4><strong>{{ post.title }}</strong><span> #{{ post.desc }}</span></h4>
-                        </a>
-                    </article>
-                {% endif %}
-            {% endfor %}
+    <section class="container__view">
+        {% include header.html %}
+        {% include nav-black.html %}
+        
+        <section class="content-box">
+            <section class="content-box__posts">
+                {% for post in site.posts %}
+                    {% if post.online %}
+                        <article>
+                            <a class="post-link" href="{{ post.url | prepend: base.url }}" target="_blank">
+                                <h4><strong>{{ post.title }}</strong><span> #{{ post.desc }}</span></h4>
+                            </a>
+                        </article>
+                    {% endif %}
+                {% endfor %}
+            </section>
         </section>
-    </section>
 
-    <section class="color-box color-box--primary-color color-box--page"></section>
+        <section class="color-box color-box--primary-color color-box--page"></section>
+    </section>
 
 </section>
 

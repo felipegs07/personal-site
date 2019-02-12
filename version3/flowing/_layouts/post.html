@@ -2,28 +2,30 @@
 layout: default
 ---
 {% include read-time.html %}
-{% include header.html %}
 
 <section class="container">
-    {% include nav-white.html %}
-    
-    <section class="content-box">
-        <section class="post">
-            <h1>{{ page.title }}</h1>
-            <article class="post__info">
-                <span>por <a href="{{ site.linkedin }}" target="_blank">@{{ site.name }}</a> - postado em </span>
-                <time>{{ page.date | date_to_string }}</time>
-                <span title="Tempo estimado de leitura"> | {{ minutesText }}</span>
-            </article>
-            {{ content }}
-            
-            <article class="post__comment">
-                {% include disqus.html %}
-            </article>
+    <section class="container__view">
+        {% include header.html %}
+        {% include nav-white.html %}
+        
+        <section class="content-box">
+            <section class="post">
+                <h1>{{ page.title }}</h1>
+                <article class="post__info">
+                    <span>por <a href="{{ site.linkedin }}" target="_blank">@{{ site.name }}</a> - postado em </span>
+                    <time>{{ page.date | date_to_string }}</time>
+                    <span title="Tempo estimado de leitura"> | {{ minutesText }}</span>
+                </article>
+                {{ content }}
+                
+                <article class="post__comment">
+                    {% include disqus.html %}
+                </article>
+            </section>
         </section>
-    </section>
 
-    <section class="color-box color-box--black-color color-box--page"></section>
+        <section class="color-box color-box--black-color color-box--page"></section>
+    </section>
 
 </section>
 
