@@ -33,5 +33,4 @@ function toggleMenu(){
 }
 
 menuBtn.addEventListener('click', toggleMenu);
-console.log('personal-site v3 beta 1');
-//alert('Esse site está em beta para teste. Por favor, desconsidere informações erradas.')
+console.log('personal-site v3 beta 2');

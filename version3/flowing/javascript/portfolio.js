@@ -25,7 +25,7 @@ class portfolio {
             <article class="project-item project-item--white">
                 <img class="project-item__image" src="${project.image}" alt="${project.alt}">
                 <h5 class="font-xs project-item__title">${project.title}</h5>
-                <a href="${project.link}" class="btn btn--secondary" target="_blank">ver projeto</a>
+                <a href="${project.link}" class="btn btn--secondary" target="_blank" rel="noopener>ver projeto</a>
             </article>`).join('');
     } 
 }
