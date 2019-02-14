@@ -8,7 +8,8 @@
     "build": "gulp",
     "watch": "gulp watch",
     "compile-js": "gulp js",
-    "minify-img": "gulp img"
+    "minify-img": "gulp img",
+    "compile-sass": "gulp css"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-imagemin": "^5.0.3",
     "gulp-plumber": "^1.2.1",
