@@ -3,7 +3,21 @@ title: Felipe Gustavo | Desenvolvedor Front-end
 email: felipegdas07@gmail.com
 name: Felipe Gustavo
 job_title: Desenvolvedor Front-end
+
+social:
+  name: Felipe Gustavo
+  links:
+    - https://twitter.com/felipegsdev
+    - https://github.com/felipegs07
+    - https://www.linkedin.com/in/felipegdasilva/
+
+author: 
+  twitter: felipegsdev
+  card: summary
 description: >-
+  Um blog focado no compartilhamento de conteúdo de desenvolvimento web e front-end. Posts sobre CSS, React, TDD, Jekyll e muito mais...
+
+desc: >-
   Eu sou um desenvolvedor front-end júnior com foco em me desenvolver na criação de web apps e UI. 
   Como programador estou em busca constante de melhores práticas e conhecimento. 
   Gosto de aprender coisas novas, me interesso por javascript e seus frameworks, design de interface/UX e
@@ -29,6 +43,11 @@ highlighter: rouge
 markdown: kramdown
 sass:
     style: compressed
+
+minify_html: true
+
+plugins:
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
