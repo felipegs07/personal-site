@@ -33,4 +33,4 @@ function toggleMenu(){
 }
 
 menuBtn.addEventListener('click', toggleMenu);
-console.log('personal-site v3 beta 2');
+console.log('personal-site v3 beta 3');
