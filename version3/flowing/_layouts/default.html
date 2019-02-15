@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% include head.html %}
     <title>{% if page.title %}{{ page.title | append: ' | ' | append: site.title }}{% else%}{{ site.title }}{% endif %}</title>
-    {% seo %}
+    {% seo title=false %}
 </head>
 <body>
     {{ content }}
