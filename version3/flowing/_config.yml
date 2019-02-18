@@ -16,6 +16,7 @@ google-site-verification: google460580164f1f5077.html
 author: 
   twitter: felipegsdev
   card: summary
+  picture: /assets/img/photo.jpg
 description: >-
   Um blog focado no compartilhamento de conteúdo de desenvolvimento web e front-end. Posts sobre CSS, React, TDD, Jekyll e muito mais...
 
@@ -40,6 +41,12 @@ github:  https://github.com/felipegs07
 home_titles: '["desenvolvedor front-end.","desenvolvedor web.", "programador júnior.", "apaixonado por CSS."]'
 #"desenvolvedor React."
 # Build settings
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/js-logo.png
+
 permalink: /:title/
 highlighter: rouge
 markdown: kramdown

@@ -7,6 +7,7 @@ categories:
 desc: "javascript"
 page-name: "post"
 online: true
+image: https://images.pexels.com/photos/416998/pexels-photo-416998.jpeg
 ---
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
