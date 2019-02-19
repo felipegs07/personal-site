@@ -10,8 +10,11 @@
     @include responsive(big-desktop){
         bottom: 9%;
     }
+    @include responsive(tab-land){
+        bottom: 20%;
+    }
     @include responsive(tab-port){
-        bottom: 16%;
+        bottom: 15%;
     }
     @include responsive(phone){
         top: 58%;
