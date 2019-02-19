@@ -52,6 +52,8 @@ highlighter: rouge
 markdown: kramdown
 sass:
     style: compressed
+# Google Analytics
+google_analytics: UA-134641527-1
 
 minify_html: true
 
