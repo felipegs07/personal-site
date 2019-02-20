@@ -1,11 +1,11 @@
 # Global variables
-title: Felipe Gustavo | Desenvolvedor Front-end
+title: Felipe G.S | Desenvolvedor Front-end
 email: felipegdas07@gmail.com
-name: Felipe Gustavo
+name: Felipe G.S
 job_title: Desenvolvedor Front-end
 
 social:
-  name: Felipe Gustavo
+  name: Felipe G.S
   links:
     - https://twitter.com/felipegsdev
     - https://github.com/felipegs07
@@ -18,7 +18,7 @@ author:
   card: summary
   picture: /assets/img/photo.jpg
 description: >-
-  Um blog focado no compartilhamento de conteúdo de desenvolvimento web e front-end. Posts sobre CSS, React, TDD, Jekyll e muito mais...
+  Um blog de Felipe G.S, focado no compartilhamento de conteúdo de desenvolvimento web e front-end. Posts sobre CSS, React, TDD, Jekyll e muito mais...
 
 desc: >-
   Eu sou um desenvolvedor front-end júnior com foco em me desenvolver na criação de web apps e UI. 
