@@ -38,8 +38,20 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://felipegs07.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin: https://www.linkedin.com/in/felipegdasilva/
 github:  https://github.com/felipegs07
+# Home variables 
 home_titles: '["desenvolvedor front-end.","desenvolvedor web.", "programador júnior.", "apaixonado por CSS."]'
 #"desenvolvedor React."
+home_hello-word: Olá
+home_button-text: me conheça
+home_pronoun: eu sou
+home_first-name: Felipe
+home_article: ", um"
+# Post variables
+post_by: por
+post_posted: postado em
+post_time-estimated: Tempo estimado de leitura
+
+
 # Build settings
 defaults:
   - scope:

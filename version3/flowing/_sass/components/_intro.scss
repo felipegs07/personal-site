@@ -1,25 +1,9 @@
 .intro {
+    margin-top:0.5rem;
     color: $black-color;
-    position: absolute;
-    left: 4%;
-    top: 60%;
     font-weight: 700;
     z-index: 103;
     opacity: 0;
-
-    @include responsive(big-desktop){
-        bottom: 9%;
-    }
-    @include responsive(tab-land){
-        bottom: 20%;
-    }
-    @include responsive(tab-port){
-        bottom: 15%;
-    }
-    @include responsive(phone){
-        top: 58%;
-    }
-
 
     &__text {
         font-size: 4rem;
@@ -27,6 +11,7 @@
         height: 2.5em;
         overflow: hidden;
         -webkit-line-clamp: 2;
+        line-height: 1em;
         display: -webkit-box;
         -webkit-box-orient: vertical;
 
@@ -38,7 +23,6 @@
             font-size: 2.2rem;
             -webkit-line-clamp: 2.5;
         }
-
     }
 
     &__name {
@@ -58,10 +42,6 @@
             animation-direction: alternate;
             animation-iteration-count: infinite;
         }
-    }
-
-    &__button {
-        margin-top: 1rem;
     }
 
     &--show {

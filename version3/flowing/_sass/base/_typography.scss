@@ -6,34 +6,26 @@ html {
 }
 
 .ola {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 100;
     color: $black-color;
 
     &__text{
         font-size: 15rem;
         font-weight: 700;
+        height: 15rem;
+        margin-left: -0.5rem;
         
         @include responsive(phone){
             font-size: 12rem;
+            height: 12rem;
         }
     }
-
     &--show {
         animation-name: ola-fadein;
         animation-duration: 0.8s;
         animation-delay: 0.5s;
         animation-fill-mode: forwards;
         opacity: 0;
-    }
-
-    &--close {
-        //animation: ola-fadeout .8s forwards;
-        animation: ola-fadeout .8s ease-in-out forwards;
     }
 
     span {

@@ -1,1 +1,1 @@
-setTimeout(function(){var o=document.querySelector(".home"),e=document.querySelector(".ola"),s=document.querySelector(".intro");o.classList.remove("color-box--opening"),o.classList.add("color-box--full"),e.classList.remove("ola--show"),e.classList.add("ola--close"),s.classList.add("intro--show")},2e3);
+setTimeout(function(){var e=document.querySelector(".home"),o=(document.querySelector(".home-text"),document.querySelector(".intro"));e.classList.remove("color-box--opening"),e.classList.add("color-box--full"),o.classList.add("intro--show")},2e3);
