@@ -23,7 +23,6 @@ html {
 
 body {
     box-sizing: border-box;
-    //padding: 3rem;
 }
 
 a {
@@ -32,7 +31,7 @@ a {
 }
 
 ::selection {
-    background: $secondary-color;
+    background: $tertiary-color;
 }
 
 ::-webkit-scrollbar {
@@ -41,12 +40,12 @@ a {
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: $background-color; 
+    background: $quaternary-color; 
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: $gray-color; 
+    background: $tertiary-color; 
   }
   
   /* Handle on hover */

@@ -30,8 +30,8 @@
                 width: 30px; 
             }
             
-            &--black {background-color: $black-color;}
-            &--white {background-color: $white-color;}
+            &--black {background-color: $primary-color;}
+            &--white {background-color: $quinary-color;}
         }
 
         &.close{
@@ -53,6 +53,7 @@
 
     &__nav {
         position: absolute;
+        opacity: 0;
         transform: translate(150%,-50%);
         top: 50%;
         right: 2%;
@@ -65,7 +66,7 @@
         border-right: 0.6rem solid $tertiary-color;
         visibility: hidden;
         transition: all 0.3s ease-in-out;
-        opacity: 0;
+        
 
 
         &-item {

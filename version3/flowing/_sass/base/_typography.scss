@@ -7,7 +7,7 @@ html {
 
 .ola {
     z-index: 100;
-    color: $black-color;
+    color: $secondary-color;
 
     &__text{
         font-size: 15rem;
@@ -22,14 +22,14 @@ html {
     }
     &--show {
         animation-name: ola-fadein;
-        animation-duration: 0.8s;
-        animation-delay: 0.5s;
+        animation-duration: 1s;
+        animation-delay: 1s;
         animation-fill-mode: forwards;
         opacity: 0;
     }
 
     span {
-        color: $white-color;
+        color: $tertiary-color;
     }
 }
 

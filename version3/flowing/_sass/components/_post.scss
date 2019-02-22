@@ -9,12 +9,12 @@
 
     table {
         width: 100%;
-        border: 1px solid rgba($black-color, $alpha: 0.6);
+        border: 1px solid rgba($primary-color, $alpha: 0.6);
         font-size: 1.4rem;
 
 
         thead tr th{
-            background-color: #E4E4E4;
+            background-color: $quaternary-color;
             text-align: center!important;
             padding: 0.5rem 0;
         }
@@ -26,13 +26,13 @@
     }
 
     a {
-        color: $black-color;
+        color: $primary-color;
         font-weight: bold;
         text-decoration: underline;
         transition: all .3s;
 
         &:hover {
-            background-color: $secondary-color;
+            background-color: $tertiary-color;
             text-decoration: none;
         }
     } 
@@ -97,7 +97,7 @@
    }
 
    &__info {
-       color: $gray-color;
+       color: $tertiary-color;
        //font-weight: bold;
        margin-left: 0.5rem;
        margin-bottom: 5rem;

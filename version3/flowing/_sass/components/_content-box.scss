@@ -18,7 +18,7 @@
         img {
             width: 15%;
             border-radius: 50%;
-            border: 0.5rem solid $black-color;
+            border: 0.5rem solid $primary-color;
             transition: all 0.5s;
             filter: grayscale(70%);
 
@@ -60,18 +60,22 @@
             a {
                 transition: all .2s;
                 &:hover {
-                    color: $secondary-color;
+                    color: $tertiary-color;
                 }
             }
         }
 
         span {
-            color: $quinary-color;
+            color: $secondary-color;
         }
 
     }
 
     &__slider {
+        width: 100%;
+    }
+
+    &--home {
         width: 100%;
     }
 

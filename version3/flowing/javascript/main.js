@@ -33,4 +33,4 @@ function toggleMenu(){
 }
 
 menuBtn.addEventListener('click', toggleMenu);
-console.log('personal-site v3 beta 6 - home rebuild');
+console.log('personal-site v3 beta 7 - color rebuild');

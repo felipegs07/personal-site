@@ -1,6 +1,6 @@
 .intro {
     margin-top:0.5rem;
-    color: $black-color;
+    color: $secondary-color;
     font-weight: 700;
     z-index: 103;
     opacity: 0;
@@ -26,17 +26,17 @@
     }
 
     &__name {
-        color: $white-color;
+        color: inherit;
     }
 
     &__title {
         display: block;
         padding: 0 0.3rem;
-        color: $black-color;
+        color: inherit;
         margin-top: 0.5rem;
 
         & > span {
-            border-right: 0.4rem solid $black-color;
+            border-right: 0.4rem solid $quaternary-color;
             animation-name: default-fadeout;
             animation-duration: 0.6s;
             animation-direction: alternate;
