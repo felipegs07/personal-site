@@ -15,9 +15,11 @@ layout: default
                     <span>{{ site.post_by }} <a href="{{ site.linkedin }}" target="_blank" rel="noopener">@{{ site.name }}</a> - {{ site.post_posted }} </span>
                     <time>{{ page.date | date_to_string }}</time>
                     <span title="{{ site.post_time-estimated }}"> | {{ minutesText }}</span>
+                    {% if page.eng-version %}
+                        <a href="{{ page.eng-version }}" class="btn-clean btn-clean--primary" target="_blank" rel="noopener">ler post em inglês</a>
+                    {% endif %}
                 </article>
                 {{ content }}
-                
                 <article class="post__comment">
                     {% include disqus.html %}
                 </article>

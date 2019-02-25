@@ -1,32 +1,22 @@
 {
     "projects":[
         {
-            "title": "Javascript Project",
-            "image": "https://cdn-images-1.medium.com/max/785/1*tPxRxw3EECtw9arNtY_2IQ.png",
-            "alt": "logo do javascript na cor preta em cima de um fundo amarelo",
-            "link": "https://github.com/",
-            "stack": "Vanilla Javascript (ES6+)"
+            "title": "Burger Creator",
+            "image": "/assets/img/burger-project.png",
+            "alt": "Logo de uma hamburgueria com nome Burger Spot, num fundo cor bege.",
+            "link": "https://github.com/felipegs07/burger-creator"
         },
         {
-            "title": "Javascript Project",
-            "image": "https://cdn-images-1.medium.com/max/785/1*tPxRxw3EECtw9arNtY_2IQ.png",
-            "alt": "logo do javascript na cor preta em cima de um fundo amarelo",
-            "link": "https://github.com/",
-            "stack": "Vanilla Javascript (ES6+)"
+            "title": "Sites pessoais",
+            "image": "/assets/img/jekyll-logo.png",
+            "alt": "logo do Jekyll em um fundo preto",
+            "link": "https://github.com/felipegs07/personal-site"
         },
         {
-            "title": "Javascript Project",
-            "image": "https://cdn-images-1.medium.com/max/785/1*tPxRxw3EECtw9arNtY_2IQ.png",
-            "alt": "logo do javascript na cor preta em cima de um fundo amarelo",
-            "link": "https://github.com/",
-            "stack": "Vanilla Javascript (ES6+)"
-        },
-        {
-            "title": "Javascript Project",
-            "image": "https://cdn-images-1.medium.com/max/785/1*tPxRxw3EECtw9arNtY_2IQ.png",
-            "alt": "logo do javascript na cor preta em cima de um fundo amarelo",
-            "link": "https://github.com/",
-            "stack": "Vanilla Javascript (ES6+)"
+            "title": "To do list app",
+            "image": "/assets/img/react-logo.png",
+            "alt": "Logo do react em azul, o símbilo de algo atômico, num fundo preto",
+            "link": "https://github.com/felipegs07/todo-list"
         }
     ]
 }

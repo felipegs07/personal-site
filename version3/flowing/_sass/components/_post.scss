@@ -83,9 +83,12 @@
     }
 
     blockquote {
-        padding-left: 0.5rem;
         border-left: 0.5rem solid $tertiary-color;
-        margin: 1rem 0 1rem 3rem;
+        margin: 1rem 0;
+        color: $secondary-color;
+        font-weight: 700;
+        font-size: 1.5em;
+        padding-left: 1rem;
     }
 
    li {
@@ -101,6 +104,10 @@
        //font-weight: bold;
        margin-left: 0.5rem;
        margin-bottom: 5rem;
+    
+       a {
+           text-decoration: none;
+       }
    }
 
    &__comment {

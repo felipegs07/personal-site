@@ -26,13 +26,13 @@ desc: >-
   Gosto de aprender coisas novas, me interesso por javascript e seus frameworks, design de interface/UX e
   Test-Driven Development. 
 skills:
-  - HTML 5;
-  - CSS 3 (sass/scss); Responsive Design; 
-  - Javascript (ES6+, JQuery); 
+  - HTML 5
+  - CSS 3 (sass/scss); Responsive Design
+  - Javascript (ES6+, JQuery)
   #- React.js (redux, react-router, hooks); 
-  - Automatizadores (Gulp, Webpack, npm);
-  - Git, GitHub;
-  - Test-Driven Development (Mocha, Chai).
+  - Automatizadores (Gulp, Webpack, npm)
+  - Git, GitHub
+  - Test-Driven Development (Mocha, Chai)
 skills_title: Habilidades
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://felipegs07.github.io/" # the base hostname & protocol for your site, e.g. http://example.com

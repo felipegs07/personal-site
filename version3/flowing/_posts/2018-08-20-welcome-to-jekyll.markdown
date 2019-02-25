@@ -8,6 +8,7 @@ desc: "javascript"
 page-name: "post"
 online: true
 image: https://images.pexels.com/photos/416998/pexels-photo-416998.jpeg
+eng-version: https://images.pexels.com/photos/416998/pexels-photo-416998.jpeg
 ---
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
@@ -148,10 +149,10 @@ __This text__ is strong
 
 <!-- OL -->
 1. Item 1
-1. Item 2
-1. Item 3
+2. Item 2
+3. Item 3
     1. Nested Item 1
-    1. Nested Item 2
+    2. Nested Item 2
 
 <!-- Inline Code Block -->
 `<p>This is a paragraph</p>`
@@ -169,9 +170,24 @@ ___
     npm start
 ```
 {% highlight javascript %}
-    function add(num1, num2){
-        return num1 + num2;
-    }
+   const dev = {
+    nome: "Felipe G.S",
+    titulo: "Desenvolvedor Front-end",
+    descricao: `
+        Eu sou um desenvolvedor front-end júnior com foco em me desenvolver na 
+        criação de web apps e UI. Como programador estou em busca constante de 
+        melhores práticas e conhecimento. Gosto de aprender coisas novas, 
+        me interesso por javascript e seus frameworks, design de interface/UX 
+        e Test-Driven Development.`,
+    habilidades: [
+        'HTML5',
+        'CSS 3 (sass/scss); Responsive Design',
+        'Javascript (ES6+, JQuery)',
+        'Automatizadores (Gulp, Webpack, npm)',
+        'Git, GitHub',
+        'Test-Driven Development (Mocha, Chai)'
+    ]
+}   
 {% endhighlight %}
 
 
