@@ -55,6 +55,7 @@
         position: absolute;
         opacity: 0;
         visibility: hidden;
+        display: none;
         transform: translate(150%,-50%);
         top: 50%;
         right: 2%;
@@ -88,6 +89,10 @@
             @include responsive(phone){
                 transform: translate(-15%, -50%);
             }
+        }
+
+        &--display {
+            display: block;
         }
 
 
