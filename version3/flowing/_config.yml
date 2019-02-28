@@ -28,7 +28,7 @@ desc: >-
 skills:
   - HTML 5
   - CSS 3 (sass/scss); Responsive Design
-  - Javascript (ES6+, JQuery)
+  - Javascript (ES6+, TypeScript, JQuery)
   #- React.js (redux, react-router, hooks); 
   - Automatizadores (Gulp, Webpack, npm)
   - Git, GitHub
