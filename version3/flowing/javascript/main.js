@@ -38,4 +38,4 @@ setTimeout(() => {
     menu.classList.add('menu__nav--display');
     console.log('etste');
 }, 1000)
-console.log('personal-site v3 beta 8 - final stage');
+console.log('Hello Friend :)');

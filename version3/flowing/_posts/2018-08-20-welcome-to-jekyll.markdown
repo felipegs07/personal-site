@@ -6,8 +6,8 @@ categories:
     - jekyll
 desc: "javascript"
 page-name: "post"
-online: true
-image: https://images.pexels.com/photos/416998/pexels-photo-416998.jpeg
+online: false
+image: "https://images.pexels.com/photos/416998/pexels-photo-416998.jpeg"
 eng-version: https://images.pexels.com/photos/416998/pexels-photo-416998.jpeg
 ---
 

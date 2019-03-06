@@ -21,9 +21,9 @@ description: >-
   Um blog de Felipe G.S, focado no compartilhamento de conteúdo de desenvolvimento web e front-end. Posts sobre CSS, React, TDD, Jekyll e muito mais...
 
 desc: >-
-  Eu sou um desenvolvedor front-end júnior com foco em me desenvolver na criação de web apps e UI. 
+  Eu sou um desenvolvedor front-end júnior focado em me desenvolver na criação de web apps e sites. 
   Como programador estou em busca constante de melhores práticas e conhecimento. 
-  Gosto de aprender coisas novas, me interesso por javascript e seus frameworks, design de interface/UX e
+  Gosto de aprender coisas novas, me interesso por javascript, React, design de interface e
   Test-Driven Development. 
 skills:
   - HTML 5
@@ -35,7 +35,7 @@ skills:
   - Test-Driven Development (Mocha, Chai)
 skills_title: Habilidades
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://felipegs07.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.felipegs.com/" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin: https://www.linkedin.com/in/felipegdasilva/
 github:  https://github.com/felipegs07
 # Home variables 
