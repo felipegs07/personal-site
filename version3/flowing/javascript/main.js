@@ -36,6 +36,5 @@ menuBtn.addEventListener('click', toggleMenu);
 
 setTimeout(() => {
     menu.classList.add('menu__nav--display');
-    console.log('etste');
 }, 1000)
 console.log('Hello Friend :)');
