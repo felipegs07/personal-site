@@ -57,7 +57,9 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/img/js-logo.png
+      image:
+        path: /assets/img/js-logo.png
+        width: 250
 
 permalink: /:title/
 highlighter: rouge
@@ -71,6 +73,7 @@ minify_html: true
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

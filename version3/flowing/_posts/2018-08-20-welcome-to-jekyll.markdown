@@ -7,8 +7,10 @@ categories:
 desc: "javascript"
 page-name: "post"
 online: false
-image: "https://images.pexels.com/photos/416998/pexels-photo-416998.jpeg"
 eng-version: https://images.pexels.com/photos/416998/pexels-photo-416998.jpeg
+image:
+  path: "https://images.pexels.com/photos/416998/pexels-photo-416998.jpeg"
+  width: 250
 ---
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
