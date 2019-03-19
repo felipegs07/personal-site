@@ -21,18 +21,11 @@ description: >-
   Um blog de Felipe G.S, focado no compartilhamento de conteúdo de desenvolvimento web e front-end. Posts sobre CSS, React, TDD, Jekyll e muito mais...
 
 desc: >-
-  Eu sou um desenvolvedor front-end júnior focado em me desenvolver na criação de web apps e sites. 
-  Como programador estou em busca constante de melhores práticas e conhecimento. 
-  Gosto de aprender coisas novas, me interesso por javascript, React, design de interface e
-  Test-Driven Development. 
-skills:
-  - HTML 5
-  - CSS 3 (sass/scss); Responsive Design
-  - Javascript (ES6+, TypeScript, JQuery)
-  #- React.js (redux, react-router, hooks); 
-  - Automatizadores (Gulp, Webpack, npm)
-  - Git, GitHub
-  - Test-Driven Development (Mocha, Chai)
+  Eu sou um desenvolvedor front-end júnior focado em me desenvolver na criação de Web Apps e sites. 
+  Como programador, estou em busca constante de melhores práticas e conhecimento. Gosto de aprender 
+  coisas novas, me interesso por desenvolvimento de software e tecnologias front-end 
+  (como Javascript, React.js, Design de Interface, TDD).
+
 skills_title: Habilidades
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.felipegs.com/" # the base hostname & protocol for your site, e.g. http://example.com
@@ -74,6 +67,7 @@ minify_html: true
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

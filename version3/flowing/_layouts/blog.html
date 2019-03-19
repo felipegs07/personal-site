@@ -8,13 +8,13 @@ layout: default
         {% include nav.html %}
         
         <section class="content-box">
-            <section class="content-box__posts">
+            <section class="content-box__slider">
                 {% for post in site.posts %}
                     {% if post.online %}
-                        <article>
-                            <a class="post-link" href="{{ post.url | prepend: base.url }}" target="_blank">
-                                <h4><strong>{{ post.title }}</strong><span> #{{ post.desc }}</span></h4>
-                            </a>
+                        <article class="project-item project-item--white">
+                            <img class="project-item__image" src="{{ post.image.path }}" alt="{{ post.title }}">
+                            <h4 class="font-xs project-item__title">{{ post.title }}</h4>
+                            <a href="{{ post.url | prepend: base.url }}" class="btn btn--secondary" target="_blank" rel="noopener">ver post</a>
                         </article>
                     {% endif %}
                 {% endfor %}

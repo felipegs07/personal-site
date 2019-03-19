@@ -11,22 +11,9 @@ layout: default
             <section class="content-box__image">
                 <img src="/assets/img/photo.jpg" alt="Foto de um homem barbado">
             </section>
-
-            <section class="content-box__text">
-                <h1 class="font-sm">{{ site.name }}</h1>
-                <h2>{{ site.job_title }}</h2>
-                <p>
-                {{ site.desc }}
-                </p>
-                <br>
-                <h3 class="font-xs">{{ site.skills_title }}:</h3>
-                <p>
-                    {% for skill in site.skills %}
-                        {{ skill }}<br>
-                    {% endfor %}
-                </p>
+            <section class="post">
+                {{ content }}
             </section>
-
         </section>
         <section class="color-box color-box--primary-color color-box--page"></section>
     </section>

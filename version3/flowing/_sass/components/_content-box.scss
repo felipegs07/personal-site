@@ -19,6 +19,9 @@
             width: 15%;
             border-radius: 50%;
             border: 0.5rem solid $primary-color;
+            border-top-color: transparent;
+            border-bottom-color: transparent;
+            padding: 1rem;
             transition: all 0.5s;
             filter: grayscale(70%);
 
