@@ -13,7 +13,8 @@ layout: default
                     {% if post.online %}
                         <article class="project-item project-item--white">
                             <img class="project-item__image" src="{{ post.image.path }}" alt="{{ post.title }}">
-                            <h4 class="font-xs project-item__title">{{ post.title }}</h4>
+                            <h3 class="font-xs project-item__title">{{ post.title }}</h3>
+                            <h4 class="project-item__tech">#{{ post.tech }}</h4>
                             <a href="{{ post.url | prepend: base.url }}" class="btn btn--secondary" target="_blank" rel="noopener">ver post</a>
                         </article>
                     {% endif %}

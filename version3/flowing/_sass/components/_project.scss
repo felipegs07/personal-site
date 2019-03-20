@@ -33,6 +33,12 @@
         text-overflow: ellipsis;
     }
 
+    &__tech {
+        color: $tertiary-color;
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+
     &--active {
         height: 25rem;
     }

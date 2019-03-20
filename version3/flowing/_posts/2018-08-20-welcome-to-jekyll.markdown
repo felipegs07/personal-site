@@ -4,12 +4,12 @@ title:  "Projeto site em bootstrap"
 date:   2018-08-20 16:31:04 -0300
 categories: 
     - jekyll
-desc: "javascript"
+tech: "javascript"
 page-name: "post"
 online: true
 eng-version: https://images.pexels.com/photos/416998/pexels-photo-416998.jpeg
 image:
-  path: "https://images.pexels.com/photos/416998/pexels-photo-416998.jpeg"
+  path: "https://pluralsight.imgix.net/paths/path-icons/nodejs-601628d09d.png"
   width: 250
 ---
 
